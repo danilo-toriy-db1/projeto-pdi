@@ -1,4 +1,4 @@
-# 🚀 [Projetos PDI]
+# 🚀 Projetos PDI
 
 > **Repositório destinado ao armazenamento dos projetos desenvolvidos no meu Projeto de Desenvolvimento Individual**
 
@@ -38,7 +38,7 @@ Aqui estão as tecnologias usadas nos projetos:
 
 * **Estagiário avaliado:** [Danilo Riki Toriy](https://github.com/danilo-toriy-db1)
 * **Padrinho Técnico:**    [Raphael Galdino Silva Costa](https://github.com/raphaelgadino)
-* **Gestor do PDI:**    [Felipe da Silva Costa Sanches]
+* **Gestor do PDI:**    Felipe da Silva Costa Sanches
 
 
 ---

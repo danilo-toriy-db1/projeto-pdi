@@ -7,7 +7,6 @@
 ## 📌 Índice
 * [Sobre o Projeto](#-sobre-o-projeto)
 * [Objetivo](#-objetivo)
-* [Demanda e Contexto](#-demanda-e-contexto)
 * [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 * [Envolvidos no PDI](#-envolvidos-no-pdi)
 
@@ -18,12 +17,6 @@ Este repositório foi desenvolvido para armazenar todos os projetos desenvolvido
 
 ## 🎯 Objetivo
 O principal propósito deste desenvolvimento é o desenvolvimento da minha pessoa como um programador responsável e competente. Ela envolve boas práticas, arquitetura de projetos, organização de código e servem de repositório do meu trabalho de desenvolvimento, podendo ser tanto do Front-end quanto do Back-end, de acordo com a exigência e desafios propostos pelo Padrinho Técnico, Gestor ou até do Tech-Lead.
-
-## 💼 Demanda e Contexto
-Para contextualizar o porquê deste projeto existir:
-* **A Necessidade:** [Explique por que o projeto foi iniciado, ex: 'Havia uma dificuldade em processar arquivos X de forma rápida'].
-* **A Solução Proposta:** [Como esta ferramenta resolve o ponto acima].
-* **Impacto:** [O que muda ou melhora após o uso desta solução].
 
 ## 🛠 Tecnologias Utilizadas
 Aqui estão as tecnologias usadas nos projetos:

@@ -8,8 +8,9 @@
 }
 
 :root {
-    --background-header: #7303fc;
-    --backgound-footer: #7303fc;
+    --background-header: #6c558a;
+    --backgound-footer: #6c558a;
+    --background-main: #bfa8ed;
 
     --text-font: "Lato", Sans-Serif;
     --cursive-font: "Dancing Script", Sans-Serif;
@@ -18,19 +19,18 @@
 }
 
 #cabecalho{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-areas: "navbar-header others";
     background-color: var(--background-header);
 }
 
 #navbar-header{
-    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: 0.5rem 0 0.5rem 0;
-    margin-right: 3.5rem;
+    margin-left: 1.5rem;
 }
 
 #navbar-header a{
@@ -71,5 +71,6 @@ hr{
 main{
     height: 100vh;
     border: none;
+    background-color: var(--background-main);
 }
 

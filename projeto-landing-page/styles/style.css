@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +10,11 @@
 :root {
     --background-header: #7303fc;
     --backgound-footer: #7303fc;
+
+    --text-font: "Lato", Sans-Serif;
+    --cursive-font: "Dancing Script", Sans-Serif;
+
+    --white-text: #FFFFFF;
 }
 
 #cabecalho{
@@ -21,7 +30,46 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 0 0.5rem 0;
+    margin-right: 3.5rem;
 }
 
-#logo{
+#navbar-header a{
+    font-family: var(--text-font);
+    text-decoration: none;
+    color: var(--white-text);
 }
+
+#menu-icone{
+    background-image: url("/projeto-landing-page/assets/img/menu.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-left: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+#rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--backgound-footer);
+    color: var(--white-text);
+    font-family: var(--text-font);
+    margin: 0;
+}
+
+hr{
+    width: 100%;
+    margin: 0.15rem 0.15rem;
+    height: 1px;
+    border: none;
+    background-color: #FFFFFF;
+}
+
+main{
+    height: 100vh;
+    border: none;
+}
+

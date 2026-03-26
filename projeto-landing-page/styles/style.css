@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 
 * {
@@ -13,10 +12,13 @@
     --background-main: #bfa8ed;
 
     --color-white: #FFFFFF;
+
     --text-font: "Lato", Sans-Serif;
+    --text-font-secundary: "Comic Neue", Sans-Serif;
     --cursive-font: "Dancing Script", Sans-Serif;
 
     --white-text: #FFFFFF;
+    --gray-text: #2b2e2c;
 }
 
 #cabecalho{
@@ -108,15 +110,24 @@ main{
 .apresentacao__title{
     font-family: var(--cursive-font);
     color: var(--white-text);
-    font-size: 4rem;
+    font-size: 5rem;
     margin-left: 5rem;
 }
 
 .apresentacao__welcome-text{
     font-family: var(--text-font);
     color: var(--white-text);
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 1rem;
+}
+
+.apresentacao__initial-text{
+    font-family: var(--text-font-secundary);
+    color: var(--gray-text);
+    font-size: 1.15rem;
+    margin: 1rem 25rem 0.5rem 25rem;
+    text-align: center;
+    line-height: 1.65rem;
 }
 
 /* Estilos dinâmicos - hover*/

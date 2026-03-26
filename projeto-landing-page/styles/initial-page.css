@@ -19,8 +19,8 @@
     margin: 0.75rem 0 0 0;
     width: 7rem;
     border-radius: 1rem;
-    background-color: var(--color-white);
-    border: var(--color-white) solid 0.25rem;
+    background-color: var(--color-card);
+    border: var(--color-card) solid 0.25rem;
 }
 
 .apresentacao__title{
@@ -62,8 +62,8 @@
 
 .card__item{
     padding: 2rem;
-    background-color: var(--color-white);
-    border: 0.5rem solid var(--color-white);
+    background-color: var(--color-card);
+    border: 0.5rem solid var(--color-card);
     border-radius: 1rem;
     margin: 0 2rem 0 2.5rem;
 
@@ -86,23 +86,26 @@
     width: 4rem;
     height: 4rem;
     margin: 0 0 1.25rem 0;
+    background-color: white;
 }
 
 #card__item--add{
     width: 4rem;
     height: 4rem;
     margin: 0 0 1.25rem 0;
+    background-color: white;
 }
 
 #card__item--mode{
     width: 4rem;
     height: 4rem;
     margin: 0 0 1.25rem 0;
+    background-color: white;
 }
 
 /* Estilos dinâmicos - hover*/
 
 .card__item:hover{
-    border: 1rem solid var(--color-white);
+    border: 1rem solid var(--color-card);
     margin: 0 1rem 0 1.5rem;
 }

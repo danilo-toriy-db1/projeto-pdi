@@ -5,7 +5,7 @@
     --backgound-footer: #6c558a;
     --background-main: #bfa8ed;
 
-    --color-white: #FFFFFF;
+    --color-card: #FFFFFF;
 
     --text-font: "Lato", Sans-Serif;
     --text-font-secundary: "Comic Neue", Sans-Serif;
@@ -14,6 +14,24 @@
     --white-text: #FFFFFF;
     --gray-text: #2b2e2c;
 }
+
+/*If/else para modo escuro*/
+body.dark-mode{
+    --background-header: #1d0b35e0;
+    --backgound-footer: #1d0b35e0;
+    --background-main: #6c558a;
+
+    --color-card: #090816;
+
+    --text-font: "Lato", Sans-Serif;
+    --text-font-secundary: "Comic Neue", Sans-Serif;
+    --cursive-font: "Dancing Script", Sans-Serif;
+
+    --white-text: #eeeef067;
+    --gray-text: #c8d7eead;
+}
+
+/*------------------------------------------------*/
 
 * {
     margin: 0;
@@ -66,7 +84,7 @@ hr{
     margin: 0.15rem 0.15rem;
     height: 1px;
     border: none;
-    background-color: #FFFFFF;
+    background-color: var(--white-text);
 }
 
 main{
@@ -88,3 +106,4 @@ main{
 #navbar a:hover{
     color: var(--background-footer);
 }
+/*-------------------------------------*/

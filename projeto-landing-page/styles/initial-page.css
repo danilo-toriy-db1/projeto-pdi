@@ -1,0 +1,108 @@
+@import url("/projeto-landing-page/styles/style.css");
+
+.apresentacao__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 1rem;;
+}
+
+.apresentacao__text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#img-logo{
+    margin: 0.75rem 0 0 0;
+    width: 7rem;
+    border-radius: 1rem;
+    background-color: var(--color-white);
+    border: var(--color-white) solid 0.25rem;
+}
+
+.apresentacao__title{
+    font-family: var(--cursive-font);
+    color: var(--white-text);
+    font-size: 5rem;
+    margin-left: 5rem;
+}
+
+.apresentacao__welcome-text{
+    font-family: var(--text-font);
+    color: var(--white-text);
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.apresentacao__initial-text{
+    font-family: var(--text-font-secundary);
+    color: var(--gray-text);
+    font-size: 1.15rem;
+    margin: 1rem 25rem 0.5rem 25rem;
+    text-align: center;
+    line-height: 1.65rem;
+}
+
+#cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 7rem 10rem 0 10rem ;
+}
+
+.cards__container{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-areas: "card-1 card-2 card-3";
+    background-color: var(--background-main);
+}
+
+.card__item{
+    padding: 2rem;
+    background-color: var(--color-white);
+    border: 0.5rem solid var(--color-white);
+    border-radius: 1rem;
+    margin: 0 2rem 0 2.5rem;
+
+    text-align: justify;
+    color: var(--gray-text);
+    font-family: var(--text-font-secundary);
+    font-weight: 800;
+}
+
+#card-1, #card-2, #card-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    text-decoration: none;
+}
+
+#card__item--github{
+    width: 4rem;
+    height: 4rem;
+    margin: 0 0 1.25rem 0;
+}
+
+#card__item--add{
+    width: 4rem;
+    height: 4rem;
+    margin: 0 0 1.25rem 0;
+}
+
+#card__item--mode{
+    width: 4rem;
+    height: 4rem;
+    margin: 0 0 1.25rem 0;
+}
+
+/* Estilos dinâmicos - hover*/
+
+.card__item:hover{
+    border: 1rem solid var(--color-white);
+    margin: 0 1rem 0 1.5rem;
+}

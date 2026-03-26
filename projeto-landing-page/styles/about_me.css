@@ -40,7 +40,7 @@
 }
 
 #menu{
-    background-image: url("/projeto-landing-page/assets/img/menu.svg");
+    background-image: url("/projeto-landing-page/assets/icons/menu.svg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;

@@ -48,6 +48,14 @@
     height: 2.5rem;
 }
 
+#img-logo{
+    margin: 0.75rem 0 0 0;
+    width: 7rem;
+    border-radius: 1rem;
+    background-color: var(--color-white);
+    border: var(--color-white) solid 0.25rem;
+}
+
 #rodape{
     display: flex;
     align-items: center;

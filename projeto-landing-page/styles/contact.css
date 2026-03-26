@@ -73,6 +73,14 @@ main{
     background-color: var(--background-main);
 }
 
+#img-logo{
+    margin: 0.75rem 0 0 0;
+    width: 7rem;
+    border-radius: 1rem;
+    background-color: var(--color-white);
+    border: var(--color-white) solid 0.25rem;
+}
+
 .navbar--desactive{
     color: var(--white-text);
 }

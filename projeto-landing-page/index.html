@@ -11,38 +11,42 @@
 
 <body>
     <header id="cabecalho">
-        <nav id="navbar-header">
-            <a href="#" id="menu-icone"></a>
-            <a href="/projeto-landing-page/index.html" class="active">Página Inicial</a>
-            <a href="/projeto-landing-page/pages/about_me.html" class="desactive">Sobre Mim</a>
-            <a href="/projeto-landing-page/pages/habilities.html" class="desactive">Habilidades</a>
-            <a href="/projeto-landing-page/pages/contact.html" class="desactive">Contato</a>
+        <nav id="navbar">
+            <a href="#" id="menu"></a>
+            <a href="/projeto-landing-page/index.html" class="navbar--active">Página Inicial</a>
+            <a href="/projeto-landing-page/pages/about_me.html" class="navbar--desactive">Sobre Mim</a>
+            <a href="/projeto-landing-page/pages/habilities.html" class="navbar--desactive">Habilidades</a>
+            <a href="/projeto-landing-page/pages/contact.html" class="navbar--desactive">Contato</a>
         </nav>    
     </header>
 
     <main>
         <section id="apresentacao">
-            <div class="container-main">
-                <img src="./assets/img/logo.svg" id="img-logo" alt="Imagem do logo MLP">
-                <h1 class="initial-title">My Landing Page</h1>
-                <h3 class="welcome-text">Bem-vindos a My Landing Page!! <br></h3>
-                <p class="initial-text">
-                    Essa é uma página de apresentação pessoal, onde você pode conhecer um pouco mais
-                    sobre mim! <br>
-                    Esse é um projeto criado a fim de demonstrar os conhecimentos que adquiri durante
-                    os cursos iniciais presentes na DB1, através da Alura. Fiquem à vontade para navegar
-                    e conhecer mais sobre mim, ou qualquer pessoa que queira se apresentar! <br>
-                    Vale ressaltar que essa página é um projeto em construção, ou seja, novas mudanças
-                    podem ser inseridas.<br>
-                </p>
+            <div class="apresentacao__container">
+                <div class="apresentacao__img">
+                    <img src="./assets/img/logo.svg" id="img-logo" alt="Imagem do logo MLP">
+                    <h1 class="apresentacao__title">My Landing Page</h1>
+                </div>
+                <div class="apresentacao__text">    
+                    <h3 class="apresentacao__welcome-text">Bem-vindos a My Landing Page!! <br></h3>
+                    <p class="apresentacao__initial-text">
+                        Essa é uma página de apresentação pessoal, onde você pode conhecer um pouco mais
+                        sobre mim! <br>
+                        Esse é um projeto criado a fim de demonstrar os conhecimentos que adquiri durante
+                        os cursos iniciais presentes na DB1, através da Alura. Fiquem à vontade para navegar
+                        e conhecer mais sobre mim, ou qualquer pessoa que queira se apresentar! <br>
+                        Vale ressaltar que essa página é um projeto em construção, ou seja, novas mudanças
+                        podem ser inseridas.<br>
+                    </p>
+                </div>    
             </div>
         </section>
     </main>
 
     <footer id="rodape">
         <hr>
-        <p class="version-text">Versão: Beta</p>
-        <p class="copyright-text">Copyright © 2026 My Landing Page. Todos os direitos reservados.</p>
+        <p class="rodape__version">Versão: Beta</p>
+        <p class="rodape__copyright">Copyright © 2026 My Landing Page. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>

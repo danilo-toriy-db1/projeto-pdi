@@ -66,3 +66,7 @@ O projeto será dividido em quatro blocos principais para garantir uma navegaç�
 * **Desenvolvedor:** Danilo Toriy
 * **Code Reviewer:** Raphael Galdino
 * **Status do Projeto:** 🏗️ Em desenvolvimento
+
+---
+
+> OBS: Abra a página usando o Live Server.

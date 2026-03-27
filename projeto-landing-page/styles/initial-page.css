@@ -108,4 +108,5 @@
 .card__item:hover{
     border: 1rem solid var(--color-card);
     margin: 0 1rem 0 1.5rem;
+    cursor: pointer;
 }

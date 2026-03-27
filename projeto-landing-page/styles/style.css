@@ -41,7 +41,7 @@
 #cabecalho{
     display: grid;
     grid-template-columns: 45% 55%;
-    grid-template-areas: "navbar others";
+    grid-template-areas: "navbar themeButton";
     background-color: var(--background-header);
 }
 
@@ -58,7 +58,7 @@
     text-decoration: none;
 }
 
-#menu{
+#navbar__menu{
     background-image: url("/projeto-landing-page/assets/icons/menu.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -66,6 +66,27 @@
     margin-left: 0.5rem;
     width: 2.5rem;
     height: 2.5rem;
+}
+
+#button__container{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#themeButton{
+    width: max-content;
+    height: max-content;
+    padding: 0.25rem;
+    margin: 0 13rem 0 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#img-theme{
+    width: 1.8rem;
+    height: 1.8rem;
 }
 
 #rodape{

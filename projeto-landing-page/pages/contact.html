@@ -14,12 +14,19 @@
 <body>
     <header id="cabecalho">
         <nav id="navbar">
-            <a href="#" id="menu"></a>
+            <a href="#" id="navbar__menu"></a>
             <a href="/projeto-landing-page/index.html" class="navbar--desactive">Página Inicial</a>
             <a href="/projeto-landing-page/pages/about_me.html" class="navbar--desactive">Sobre Mim</a>
             <a href="/projeto-landing-page/pages/habilities.html" class="navbar--desactive">Habilidades</a>
             <a href="/projeto-landing-page/pages/contact.html" class="navbar--active">Contato</a>
         </nav>    
+
+        <div id="button__container">
+            <button id="themeButton" onclick="changeMode()">
+                <img src="/projeto-landing-page/assets/icons/dark-mode.svg" 
+                alt="Ícone do modo atual da página" id="img-theme">
+            </button>
+        </div>
     </header>    
 
     <main>
@@ -40,4 +47,6 @@
         <p class="rodape__copyright">Copyright © 2026 My Landing Page. Todos os direitos reservados.</p>
     </footer>
 </body>
+
+<script src="/projeto-landing-page/js/script.js"></script>
 </html>

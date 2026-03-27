@@ -9,3 +9,4 @@ function changeMode(){
         document.getElementById("img-theme").src = "/projeto-landing-page/assets/icons/light-mode.svg";
     }
 }
+

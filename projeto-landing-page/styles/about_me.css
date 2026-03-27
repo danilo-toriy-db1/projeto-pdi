@@ -1,2 +1,44 @@
 @import url("/projeto-landing-page/styles/style.css");
 
+#about-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 99vw;
+}
+
+.card{
+    width: 75%;
+    height: max-content;
+    min-height: 75%;
+    background-color: var(--color-card);
+    border-radius: 3rem;
+    border: solid 0.25rem;
+    color: var(--gray-text);
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    line-height: 2.5rem;    
+}
+
+.card__infos{
+    margin: 1.75rem 0 0 10rem;
+}
+
+.card__biography, .card__hobbies, .card__dislike, .card__goals{
+    margin: 0.75rem 5rem 0.75rem 6rem;   
+    line-height: 1.5rem;
+}
+
+#img-profile{
+    width: 15rem;
+    height: 13rem;
+    border-radius: 2rem;
+    margin: 1.5rem 1.5rem 1.5rem 4rem;
+}
+

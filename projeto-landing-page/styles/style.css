@@ -31,100 +31,222 @@
     --gray-text: #c8d7eead;
 }
 
-/*------------------------------------------------*/
+/*------------------------------------------------------*/
 
-* {
-    margin: 0;
-    padding: 0;
+/*-----------------------Computadores/notebooks----------------------------*/
+@media screen and (min-width: 1024px){
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #cabecalho{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-template-areas: "navbar themeButton";
+        background-color: var(--background-header);
+    }
+
+    #navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 0 0.5rem 0;
+        margin-left: 1.5rem;
+    }
+
+    #navbar a{
+        font-family: var(--text-font);
+        text-decoration: none;
+    }
+
+    #navbar__menu{
+        background-image: url("/projeto-landing-page/assets/icons/menu.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        margin-left: 0.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    #button__container{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    #themeButton{
+        width: max-content;
+        height: max-content;
+        padding: 0.25rem;
+        margin: 0 13rem 0 0;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    #img-theme{
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    #rodape{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: var(--backgound-footer);
+        color: var(--white-text);
+        font-family: var(--text-font);
+        margin: 0;
+        width: 100vw;
+    }
+
+    hr{
+        width: 100%;
+        margin: 0.15rem 0.15rem;
+        height: 1px;
+        border: none;
+        background-color: var(--gray-text);
+    }
+
+    main{
+        height: 100vh;
+        border: none;
+        background-color: var(--background-main);
+    }
+
+    .navbar--desactive{
+        color: var(--white-text);
+    }
+
+    .navbar--active{
+        color: var(--background-main);
+    }
+
+    /* Estilos dinâmicos - hover*/
+
+    #navbar a:hover{
+        color: var(--background-footer);
+    }
+    /*-------------------------------------*/
+
 }
 
-#cabecalho{
-    display: grid;
-    grid-template-columns: 45% 55%;
-    grid-template-areas: "navbar themeButton";
-    background-color: var(--background-header);
-}
+/*-----------------------Tablets----------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+        * {
+        margin: 0;
+        padding: 0;
+    }
 
-#navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 0 0.5rem 0;
-    margin-left: 1.5rem;
-}
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 
-#navbar a{
-    font-family: var(--text-font);
-    text-decoration: none;
-}
+    #cabecalho{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-areas: "navbar themeButton";
+        background-color: var(--background-header);
+    }
 
-#navbar__menu{
-    background-image: url("/projeto-landing-page/assets/icons/menu.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    margin-left: 0.5rem;
-    width: 2.5rem;
-    height: 2.5rem;
-}
+    #navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.75rem 0 0.75rem 0;
+    }
 
-#button__container{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-}
+    #navbar a{
+        font-family: var(--text-font);
+        text-decoration: none;
+        font-size: 1.25rem;
+    }
 
-#themeButton{
-    width: max-content;
-    height: max-content;
-    padding: 0.25rem;
-    margin: 0 13rem 0 0;
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
-}
+    #navbar__menu{
+        background-image: url("/projeto-landing-page/assets/icons/menu.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        margin-left: 0.75rem;
+        width: 2.25rem;
+        height: 2.25rem;
+    }
 
-#img-theme{
-    width: 1.8rem;
-    height: 1.8rem;
-}
+    #button__container{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
 
-#rodape{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: var(--backgound-footer);
-    color: var(--white-text);
-    font-family: var(--text-font);
-    margin: 0;
-}
+    #themeButton{
+        width: max-content;
+        height: max-content;
+        padding: 0.25rem;
+        margin: 0 7.5rem 0 0;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
 
-hr{
-    width: 100%;
-    margin: 0.15rem 0.15rem;
-    height: 1px;
-    border: none;
-    background-color: var(--gray-text);
-}
+    #img-theme{
+        width: 2rem;
+        height: 2rem;
+    }
 
-main{
-    height: 100vh;
-    border: none;
-    background-color: var(--background-main);
-}
+    #rodape{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: var(--backgound-footer);
+        color: var(--white-text);
+        font-family: var(--text-font);
+        margin: 0;
+    }
 
-.navbar--desactive{
-    color: var(--white-text);
-}
+    hr{
+        width: 100vw;
+        margin: 0.15rem 0.15rem;
+        height: 1px;
+        border: none;
+        background-color: var(--gray-text);
+    }
 
-.navbar--active{
-    color: var(--background-main);
-}
+    main{
+        height: 100%;
+        border: none;
+        background-color: var(--background-main);
+    }
 
-/* Estilos dinâmicos - hover*/
+    .navbar--desactive{
+        color: var(--white-text);
+    }
 
-#navbar a:hover{
-    color: var(--background-footer);
+    .navbar--active{
+        color: var(--background-main);
+    }
+
+    /* Estilos dinâmicos - hover*/
+
+    #navbar a:hover{
+        color: var(--background-footer);
+    }
+    /*-------------------------------------*/
+    
 }
-/*-------------------------------------*/

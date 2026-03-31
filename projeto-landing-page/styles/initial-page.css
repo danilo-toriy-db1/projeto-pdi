@@ -232,3 +232,120 @@
     }
 
 }
+
+/*-----------------------Smartphones----------------------------*/
+@media screen and (max-width: 767px){
+
+    .apresentacao__img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .apresentacao__text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #img-logo{
+        margin: 0.25rem 0 0 0.25rem;
+        width: 9rem;
+        border-radius: 1rem;
+        background-color: var(--color-card);
+        border: var(--color-card) solid 0.25rem;
+    }
+
+    .apresentacao__title{
+        font-family: var(--cursive-font);
+        color: var(--white-text);
+        font-size: 3.25rem;
+        margin: 2rem 0 0 0;
+    }
+
+    .apresentacao__welcome-text{
+        font-family: var(--text-font);
+        color: var(--white-text);
+        font-size: 1.75rem;
+        padding: 1.25rem;
+        text-align: center;
+    }
+
+    .apresentacao__initial-text{
+        font-family: var(--text-font-secundary);
+        color: var(--gray-text);
+        font-size: 1.1rem;
+        margin: 1rem 2rem 0.5rem 2rem;
+        text-align: center;
+        line-height: 1.65rem;
+    }
+
+    #cards{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 3rem 1rem 1rem 1rem ;
+    }
+
+    .cards__container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--background-main);
+    }
+
+    .card__item{
+        padding: 1.25rem;
+        background-color: var(--color-card);
+        border: 0.5rem solid var(--color-card);
+        border-radius: 1rem;
+        margin: 0 2rem 1.75rem 2.5rem;
+
+        text-align: justify;
+        color: var(--gray-text);
+        font-family: var(--text-font-secundary);
+        font-weight: 800;
+    }
+
+    #card-1, #card-2, #card-3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        text-decoration: none;
+    }
+
+    #card__item--github{
+        width: 4rem;
+        height: 4rem;
+        margin: 0 0 1rem 0;
+        background-color: white;
+    }
+
+    #card__item--add{
+        width: 4rem;
+        height: 4rem;
+        margin: 0 0 1rem 0;
+        background-color: white;
+    }
+
+    #card__item--mode{
+        width: 4rem;
+        height: 4rem;
+        margin: 0 0 1rem 0;
+        background-color: white;
+    }
+
+    /* Estilos dinâmicos - hover*/
+
+    .card__item:hover{
+        border: 1rem solid var(--color-card);
+        margin: 0 1rem 0 1.5rem;
+        cursor: pointer;
+    }
+}

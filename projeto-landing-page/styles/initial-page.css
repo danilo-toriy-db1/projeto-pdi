@@ -54,7 +54,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 7rem 10rem 0 10rem ;
+        margin: 7rem 10rem 2rem 10rem ;
     }
 
     .cards__container{

@@ -120,7 +120,7 @@
     }
 
     main{
-        height: 100vh;
+        height: 100%;
         border: none;
         background-color: var(--background-main);
     }
@@ -295,7 +295,7 @@
         display: flex;
         margin: 0 1rem 0 0.75rem;
         width: 1.75rem;
-        height: 1.35rem;
+        height: 1.5rem;
     }
 
     #button__container{

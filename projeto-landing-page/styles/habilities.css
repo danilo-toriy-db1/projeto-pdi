@@ -1,2 +1,40 @@
 @import url("/projeto-landing-page/styles/style.css");
 
+
+/*-----------------------Computadores/notebooks----------------------------*/
+@media screen and (min-width: 1025px){
+
+    #habilidades{
+        width: 100vw;
+        min-height: 87vh;
+        background-color: var(--background-main);
+        display: flex;
+        justify-content: center;
+        margin: 3rem 0 0 0;
+    }
+
+    .habilidades__title{
+        font-family: var(--cursive-font);
+        font-size: 3rem;
+    }
+
+    #habilidades__cards--container{
+        position: relative;
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 2.5rem 0;
+    }
+
+    #habilidades__cards--container::after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0.9rem;
+        min-height: 20rem;
+        border-right: 0.15rem #ccc dashed;
+        z-index: 1;
+    }
+
+
+
+}

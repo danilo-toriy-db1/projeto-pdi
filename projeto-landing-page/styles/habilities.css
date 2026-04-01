@@ -16,11 +16,12 @@
     .habilidades__title{
         font-family: var(--cursive-font);
         font-size: 3rem;
+        text-align: center;
     }
 
     #habilidades__cards--container{
         position: relative;
-        max-width: 80%;
+        width: 80vw;
         margin: 0 auto;
         padding: 2.5rem 0;
     }
@@ -33,6 +34,21 @@
         min-height: 20rem;
         border-right: 0.15rem #ccc dashed;
         z-index: 1;
+    }
+
+    .habilidade__type{
+        position: relative;
+        padding: 0.5rem 3.2rem;
+        box-sizing: border-box;
+        width: 50%;
+    }
+
+    .soft-skill{
+        left: 5%;
+    }
+
+    .hard-skill{
+        left: 65%;
     }
 
 

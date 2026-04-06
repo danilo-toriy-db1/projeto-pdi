@@ -38,17 +38,73 @@
 
     .habilidade__type{
         position: relative;
-        padding: 0.5rem 3.2rem;
+        padding: 0.5rem 1rem;
         box-sizing: border-box;
         width: 50%;
+        display: flex;
+    }
+
+    .habilidade__content{
+        position: relative;
+        padding: 0.75rem 0.25rem 0.75rem 0.25rem;
+        border-radius: 0.5rem;
+        border: #ccc solid 0.2rem;
+        min-width: 11.5rem;
+        width: max-content;
+    }
+
+    .habilidade__content h3{
+        min-width: 0.5rem;
+        width: max-content;
+    }
+
+    .habilidade__content::after{
+        content: '';
+        position: absolute;
+        width: 0.75rem;
+        height: 0.75rem;
+        border-radius: 50%;
+        background-color: #ccc;
+        top: 50%
+    }
+
+    .habilidade__content::before{
+        content: '';
+        position: absolute;
+        width: 4rem;
+        height: 0.25rem;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #ccc;
+    }
+
+    .soft-skill .habilidade__content::before{
+        right: -4rem;
+    }
+
+    .hard-skill .habilidade__content::before{
+        left: -4rem;
+    }
+
+    .soft-skill .habilidade__content::after{
+        right: 0;
+        transform: translate(50%, -50%);
+    }
+
+    .hard-skill .habilidade__content::after{
+        left: 0;
+        transform: translate(-50%, -50%);
     }
 
     .soft-skill{
-        left: 5%;
+        justify-content: flex-end;
+        padding-right: 4rem;
     }
 
     .hard-skill{
-        left: 65%;
+        justify-content: flex-start;
+        padding-left: 4rem;
+        margin-left: 50%;
     }
 
 

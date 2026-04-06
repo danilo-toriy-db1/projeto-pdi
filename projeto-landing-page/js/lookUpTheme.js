@@ -1,4 +1,4 @@
-if (localStorage.getItem("tema") === null){
+if (!localStorage.getItem("tema")){
     localStorage.setItem("tema", "dark");
 }
 

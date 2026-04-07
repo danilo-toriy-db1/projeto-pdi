@@ -15,6 +15,8 @@ const habilidades = [
     "tipo": "Soft Skill"}
 ]
 
+localStorage.setItem('listaHabilidades', JSON.stringify(habilidades));
+
 export function getHabilities(){
-    return habilidades;
+    return JSON.parse(localStorage.getItem('listaHabilidades'));
 }

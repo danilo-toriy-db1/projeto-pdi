@@ -1,0 +1,32 @@
+@import url("/projeto-landing-page/styles/style.css");
+
+@media screen and (min-width: 1025px){
+
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #overlay__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vw;
+        height: 50vh;
+    }
+
+    .input__container{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 1rem;
+    }
+
+    .button__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 1rem;
+    }
+
+}

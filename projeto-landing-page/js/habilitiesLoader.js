@@ -36,4 +36,4 @@ export function loadHabilities(){
     });
 }
 
-//loadHabilities();
+loadHabilities();

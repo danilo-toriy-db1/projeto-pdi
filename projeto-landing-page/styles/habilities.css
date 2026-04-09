@@ -19,7 +19,7 @@
         min-height: 87vh;
         background-color: var(--background-main);
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         margin: 3rem 0 0 0;
     }
 
@@ -133,6 +133,31 @@
         padding-left: 4rem;
         margin-left: 50%;
     }
+
+    .button__container{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2rem 0 0 0;
+    }
+
+    #button__openPopUp, #button__removeHability{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem 1rem 2rem;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        text-align: center;
+        font-family: var(--text-font-secondary);
+        font-weight: 300;
+        font-size: 1rem;
+    }
+
+    #icon__img--remove, #icon__img--add{
+        margin-right: 0.5rem;
+    }
+
 
 
 

@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --background-header: #6c558a;
+    --backgound-footer: #6c558a;
+    --background-main: #bfa8ed;
+
+    --color-card: #FFFFFF;
+
+    --text-font: "Lato", Sans-Serif;
+    --text-font-secundary: "Comic Neue", Sans-Serif;
+    --cursive-font: "Dancing Script", Sans-Serif;
+
+    --white-text: #FFFFFF;
+    --gray-text: #2b2e2c;
+
+}
+
+/*If/else para modo escuro*/
+.dark-mode{
+    --background-header: #1d0b35e0;
+    --backgound-footer: #1d0b35e0;
+    --background-main: #6c558a;
+
+    --color-card: #090816;
+
+    --text-font: "Lato", Sans-Serif;
+    --text-font-secundary: "Comic Neue", Sans-Serif;
+    --cursive-font: "Dancing Script", Sans-Serif;
+
+    --white-text: #eeeef067;
+    --gray-text: #c8d7eead;
+}
+
+
+/*-----------------------Computadores/notebooks----------------------------*/
+@media screen and (min-width: 1024px){
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #cabecalho{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-template-areas: "navbar themeButton";
+        background-color: var(--background-header);
+    }
+
+    #navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 0 0.5rem 0;
+        margin-left: 1.5rem;
+    }
+
+    #navbar a{
+        font-family: var(--text-font);
+        text-decoration: none;
+    }
+
+    #navbar__menu{
+        background-image: url("/projeto-landing-page/assets/icons/menu.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        margin-left: 0.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    #button__container{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    #themeButton{
+        width: max-content;
+        height: max-content;
+        padding: 0.25rem;
+        margin: 0 13rem 0 0;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    #img-theme{
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    #rodape{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: var(--backgound-footer);
+        color: var(--white-text);
+        font-family: var(--text-font);
+        margin: 0;
+        width: 100vw;
+    }
+
+    hr{
+        width: 100%;
+        margin: 0.15rem 0.15rem;
+        height: 1px;
+        border: none;
+        background-color: var(--gray-text);
+    }
+
+    main{
+        height: 100%;
+        border: none;
+        background-color: var(--background-main);
+    }
+
+    .navbar--desactive{
+        color: var(--white-text);
+    }
+
+    .navbar--active{
+        color: var(--background-main);
+    }
+
+    /* Estilos dinâmicos - hover*/
+
+    #navbar a:hover{
+        color: var(--background-footer);
+    }
+    /*-------------------------------------*/
+
+}
+
+/*-----------------------Tablets----------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+        * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #cabecalho{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-areas: "navbar themeButton";
+        background-color: var(--background-header);
+    }
+
+    #navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.75rem 0 0.75rem 0;
+    }
+
+    #navbar a{
+        font-family: var(--text-font);
+        text-decoration: none;
+        font-size: 1.25rem;
+    }
+
+    #navbar__menu{
+        background-image: url("/projeto-landing-page/assets/icons/menu.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        margin-left: 0.75rem;
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+
+    #button__container{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    #themeButton{
+        width: max-content;
+        height: max-content;
+        padding: 0.25rem;
+        margin: 0 7.5rem 0 0;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    #img-theme{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    #rodape{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: var(--backgound-footer);
+        color: var(--white-text);
+        font-family: var(--text-font);
+        margin: 0;
+    }
+
+    hr{
+        width: 100vw;
+        margin: 0.15rem 0.15rem;
+        height: 1px;
+        border: none;
+        background-color: var(--gray-text);
+    }
+
+    main{
+        height: 100%;
+        border: none;
+        background-color: var(--background-main);
+    }
+
+    .navbar--desactive{
+        color: var(--white-text);
+    }
+
+    .navbar--active{
+        color: var(--background-main);
+    }
+
+    /* Estilos dinâmicos - hover*/
+
+    #navbar a:hover{
+        color: var(--background-footer);
+    }
+    /*-------------------------------------*/
+    
+}
+
+/*-----------------------Smartphones----------------------------*/
+@media screen and (max-width: 767px){
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #cabecalho{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-areas: "navbar themeButton";
+        background-color: var(--background-header);
+    }
+
+    #navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.25rem 0 0.25rem 0;
+    }
+
+    #navbar a{
+        font-family: var(--text-font);
+        text-decoration: none;
+        font-size: 0.9rem;
+        text-align: center;
+        margin-left: 0.75rem;
+    }
+
+    #navbar__menu{
+        background-image: url("/projeto-landing-page/assets/icons/menu.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        margin: 0 1rem 0 0.75rem;
+        width: 1.75rem;
+        height: 1.5rem;
+    }
+
+    #button__container{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    #themeButton{
+        width: max-content;
+        height: max-content;
+        padding: 0.25rem;
+        margin: 0 1rem 0 0;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    #img-theme{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    #rodape{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: var(--backgound-footer);
+        color: var(--white-text);
+        font-family: var(--text-font);
+        margin: 0;
+        text-align: center;
+    }
+
+    hr{
+        width: 100vw;
+        margin: 0.15rem 0.15rem;
+        height: 1px;
+        border: none;
+        background-color: var(--gray-text);
+    }
+
+    main{
+        height: 100%;
+        border: none;
+        background-color: var(--background-main);
+    }
+
+    .navbar--desactive{
+        color: var(--white-text);
+    }
+
+    .navbar--active{
+        color: var(--background-main);
+    }
+
+    /* Estilos dinâmicos - hover*/
+
+    #navbar a:hover{
+        color: var(--background-footer);
+    }
+    /*-------------------------------------*/
+
+}

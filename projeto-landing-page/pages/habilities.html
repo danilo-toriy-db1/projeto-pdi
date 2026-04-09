@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habilidades</title>
+
+    <link rel="stylesheet" href="/projeto-landing-page/styles/habilities.css">
+    <link rel="icon" type="image/x-icon" href="/projeto-landing-page/assets/img/logo.jpg">
+
+    <script src="/projeto-landing-page/js/lookUpTheme.js"></script>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <nav id="navbar">
+            <a href="#" id="navbar__menu"></a>
+            <a href="/projeto-landing-page/index.html" class="navbar--desactive">Página Inicial</a>
+            <a href="/projeto-landing-page/pages/about_me.html" class="navbar--desactive">Sobre Mim</a>
+            <a href="/projeto-landing-page/pages/habilities.html" class="navbar--active">Habilidades</a>
+            <a href="/projeto-landing-page/pages/contact.html" class="navbar--desactive">Contato</a>
+        </nav>   
+        
+        <div id="button__container">
+            <button id="themeButton" onclick="changeMode()">
+                <img src="/projeto-landing-page/assets/icons/dark-mode.svg" 
+                alt="Ícone do modo atual da página" id="img-theme">
+            </button>
+        </div>
+    </header>    
+
+        <main>
+        <section id="habilidades">
+            <div class="habilidades__container">
+                <h1 class="habilidades__title">Habilidades</h1>
+                <div id="habilidades__cards--container">
+                </div>
+            </div>
+
+            <div class="button__container">
+                <button type="button" id="button__removeHability">
+                    <img src="/projeto-landing-page/assets/icons/remove-icon.svg" alt="Ícone de Remover Habilidade"
+                    id="icon__img--remove">    
+                    Remover Habilidade
+                </button>
+                <button type="button" id="button__openPopUp">
+                    <img src="/projeto-landing-page/assets/icons/add-icon.svg" alt="Ícone de Adicionar Habilidade" 
+                    id="icon__img--add">
+                    Adicionar Habilidade
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer id="rodape">
+        <hr>
+        <p class="rodape__version">Versão: Beta</p>
+        <p class="rodape__copyright">Copyright © 2026 My Landing Page. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+<script src="/projeto-landing-page/js/script.js"></script>
+<script type="module" src="/projeto-landing-page/js/habilitiesContainer.js"></script>
+<script type="module" src="/projeto-landing-page/js/habilitiesLoader.js"></script>
+<script type="module" src="/projeto-landing-page/js/overlay.js"></script>
+</html>

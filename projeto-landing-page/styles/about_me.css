@@ -1,0 +1,161 @@
+@import url("/projeto-landing-page/styles/style.css");
+
+/*-----------------------Computadores/notebooks----------------------------*/
+@media screen and (min-width: 1025px){
+
+    #about-me{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 99vw;
+    }
+
+    .card{
+        width: 75%;
+        height: max-content;
+        min-height: 75%;
+        background-color: var(--color-card);
+        border-radius: 3rem;
+        border: solid 0.25rem;
+        color: var(--gray-text);
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        margin: 2rem;
+        line-height: 2.5rem;    
+    }
+
+    .card__infos{
+        margin: 1.75rem 0 0 10rem;
+    }
+
+    .card__biography, .card__hobbies, .card__dislike, .card__goals{
+        margin: 0.75rem 5rem 0.75rem 6rem;   
+        line-height: 1.5rem;
+    }
+
+    #img-profile{
+        width: 15rem;
+        height: 13rem;
+        border-radius: 2rem;
+        margin: 1.5rem 1.5rem 1.5rem 4rem;
+    }
+}
+
+/*-----------------------Tablets----------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    #about-me{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        height: 100%;
+        width: 100vw;
+    }
+
+    .card{
+        width: 75%;
+        height: max-content;
+        min-height: 75%;
+        background-color: var(--color-card);
+        border-radius: 3rem;
+        border: solid 0.25rem;
+        color: var(--gray-text);
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        margin: 0.5rem;
+        line-height: 2rem;    
+    }
+
+    .card__infos{
+        margin: 1.75rem 0 0 2rem;
+        line-height: 2rem;
+    }
+
+    .card__biography, .card__hobbies, .card__dislike, .card__goals{
+        margin: 2rem 2rem 0.75rem 2rem;   
+        line-height: 1.5rem;
+        font-size: 1.3rem;
+        letter-spacing: 0.05rem;
+    }
+
+    p~hr{
+        width: 100%;
+        margin: 0.15rem 0.15rem;
+        height: 1px;
+        border: none;
+        background-color: var(--gray-text);
+    }
+
+    #img-profile{
+        width: 12rem;
+        height: 12rem;
+        border-radius: 2rem;
+        margin: 2rem 1rem 1.5rem 2.5rem;
+    }
+}
+
+/*-----------------------Smartphones----------------------------*/
+@media screen and (max-width: 767px){
+
+    #about-me{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .card{
+        width: 85%;
+        height: fit-content;
+        min-height: 60%;
+        background-color: var(--color-card);
+        border-radius: 3rem;
+        border: solid 0.25rem;
+        color: var(--gray-text);
+        margin: 1.5rem 0 1.5rem 0;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+        line-height: 2rem;    
+    }
+
+    .card__infos{
+        margin: 1rem 0 0 0;
+        font-size: 0.875rem;
+        text-align: left;
+    }
+
+    .card__biography, .card__hobbies, .card__dislike, .card__goals{
+        margin: 0.75rem 2rem 0.75rem 0.75rem;   
+        line-height: 1.5rem;
+    }
+
+    #img-profile{
+        width: 7rem;
+        height: 7rem;
+        border-radius: 2rem;
+        margin: 1.5rem 1.5rem 1.5rem 5.5rem;
+    }
+
+    p~hr{
+        width: 100%;
+        margin: 0.15rem 0.15rem;
+        height: 1px;
+        border: none;
+        background-color: var(--gray-text);
+    }
+}

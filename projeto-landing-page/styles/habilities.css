@@ -1,0 +1,164 @@
+@import url("/projeto-landing-page/styles/style.css");
+
+:root{
+    --hard-skill-background: #77fc9a;
+    --soft-skill-background: #576ff7;
+    --container-background: #0e051c;
+
+    --hard-skill-border: #23b84b;
+    --soft-skill-border: #021373;
+
+    --dashed-line-color: #ccc; 
+}
+
+/*-----------------------Computadores/notebooks----------------------------*/
+@media screen and (min-width: 1025px){
+
+    #habilidades{
+        width: 100vw;
+        min-height: 87vh;
+        background-color: var(--background-main);
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 0 0 0;
+    }
+
+    .habilidades__title{
+        font-family: var(--cursive-font);
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    #habilidades__cards--container{
+        position: relative;
+        width: 70vw;
+        margin: 0 auto;
+        padding: 2.5rem 0;
+        background-color: var(--container-background);
+        border: var(--container-background) 0.1rem solid;
+        border-radius: 1rem;
+    }
+
+    #habilidades__cards--container::after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0.9rem;
+        min-height: 20rem;
+        height: 95%;
+        border-right: var(--dashed-line-color) 0.15rem dashed;
+        z-index: 1;
+    }
+
+    .habilidade__type{
+        position: relative;
+        padding: 0.5rem 1rem;
+        box-sizing: border-box;
+        width: 50%;
+        display: flex;
+    }
+
+    .habilidade__content{
+        position: relative;
+        padding: 0.75rem 0.25rem 0.75rem 0.25rem;
+        min-width: 11.5rem;
+        width: max-content;
+    }
+
+    .habilidade__content h3{
+        width: 100%;
+        text-align: center;
+    }
+
+    .habilidade__content::after{
+        content: '';
+        position: absolute;
+        width: 0.75rem;
+        height: 0.75rem;
+        top: 50%
+    }
+
+    .habilidade__content::before{
+        content: '';
+        position: absolute;
+        width: 3.8rem;
+        height: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        border-top: var(--dashed-line-color) dashed 0.15rem;
+    }
+
+    .soft-skill .habilidade__content::before{
+        right: -4.2rem;
+    }
+
+    .hard-skill .habilidade__content::before{
+        left: -4rem;
+    }
+
+    .soft-skill .habilidade__content::after{
+        right: -0.5rem;
+        transform: translate(50%, -50%);
+        border-radius: 50%;
+        background-color: var(--dashed-line-color);
+    }
+
+    .hard-skill .habilidade__content::after{
+        left: -0.5rem;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background-color: var(--dashed-line-color);
+    }
+
+    .soft-skill .habilidade__content{
+        background-color: var(--soft-skill-background);
+        border-radius: 0.5rem;
+        border: var(--soft-skill-border) solid 0.2rem;
+    }
+
+    .hard-skill .habilidade__content{
+        background-color: var(--hard-skill-background);
+        border-radius: 0.5rem;
+        border: var(--hard-skill-border) solid 0.2rem;
+    }
+
+    .soft-skill{
+        justify-content: flex-end;
+        padding-right: 4rem;
+    }
+
+    .hard-skill{
+        justify-content: flex-start;
+        padding-left: 4rem;
+        margin-left: 50%;
+    }
+
+    .button__container{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2rem 0 0 0;
+    }
+
+    #button__openPopUp, #button__removeHability{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem 1rem 2rem;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        text-align: center;
+        font-family: var(--text-font-secondary);
+        font-weight: 300;
+        font-size: 1rem;
+    }
+
+    #icon__img--remove, #icon__img--add{
+        margin-right: 0.5rem;
+    }
+
+
+
+
+}

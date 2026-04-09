@@ -1,10 +1,10 @@
 import { getHabilities } from "./habilitiesContainer.js";  
 
-function loadHabilities(){
+export function loadHabilities(){
     const habilities = getHabilities();
     const habilitiesContainer = document.getElementById("habilidades__cards--container");
 
-    habilitiesContainer.innerHTML = '';
+    habilitiesContainer.innerHTML = ' ';
 
     if (habilities.length === 0) {
         const div = document.createElement('div');
@@ -36,4 +36,4 @@ function loadHabilities(){
     });
 }
 
-loadHabilities();
+//loadHabilities();

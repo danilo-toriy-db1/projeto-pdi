@@ -1,3 +1,5 @@
+import { loadHabilities } from "./habilitiesLoader.js"
+
 const habilidades = [
     {"habilidade": "HTML",
      "tipo": "Hard Skill"   
@@ -19,4 +21,10 @@ localStorage.setItem('listaHabilidades', JSON.stringify(habilidades));
 
 export function getHabilities(){
     return JSON.parse(localStorage.getItem('listaHabilidades'));
+}
+
+export function addHabilities(novaHabilidade){
+    habilidades.push(novaHabilidade);
+    localStorage.setItem('listaHabilidades', JSON.stringify(habilidades));
+    loadHabilities();
 }

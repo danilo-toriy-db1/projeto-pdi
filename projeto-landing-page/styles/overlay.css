@@ -2,72 +2,101 @@
 
 @media screen and (min-width: 1025px){
 
-    body{
+    .overlay__display{
         display: flex;
         align-items: center;
         justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 999;
     }
 
-    #overlay__container{
+    .overlay__container{
         display: flex;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
         width: 40vw;
         height: 40vh;
         background-color: var(--background-main);
         border: none;
         border-radius: 4rem;
-    }
 
-    .input__container{
-        display: grid;
-        grid-template-columns: auto 1fr;
-        gap: 1rem;
-    }
+        #form__container{
+            margin: 2.5rem 0.5rem 0 0;
+            display: flex;
+            align-self: center;
+            justify-self: center;
+            flex-direction: column;
+        }
 
-    .button__container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: 2rem;
-    }
+        .input__container{
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1rem;
+        }
 
-    button{
-        padding: 0.75rem 1.75rem 0.75rem 1.75rem;
-        border: none;
-        border-radius: 1rem;
-        text-align: center;
-        font-family: var(--text-font-secundary);
-        font-size: 1rem;
-        color: var(--white-text);
-    }
+        .button__container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 2rem;
+        }
 
-    #button__reset{
-        background-color: #f56056;
-    }
+        button{
+            padding: 0.75rem 1.75rem 0.75rem 1.75rem;
+            border: none;
+            border-radius: 1rem;
+            text-align: center;
+            font-family: var(--text-font-secundary);
+            font-size: 1rem;
+            color: var(--white-text);
+        }
 
-    #button__submit{
-        background-color: var(--background-header);
-    }
+        #button__reset{
+            background-color: #f56056;
+        }
 
-    label{
-        font-family: var(--text-font);
-        font-size: 1.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+        #button__submit{
+            background-color: var(--background-header);
+        }
 
-    #nova-habilidade{
-        padding: 1rem;
-        border: none;
-        border-radius: 0.25rem;
-    }
+        label{
+            font-family: var(--text-font);
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-    #tipo-habilidade{
-        text-align: center;
-        border: none;
-        border-radius: 0.2rem;
-    }
+        #nova-habilidade{
+            padding: 1rem;
+            border: none;
+            border-radius: 0.25rem;
+        }
 
+        #tipo-habilidade{
+            text-align: center;
+            border: none;
+            border-radius: 0.2rem;
+        }
+
+        .close__container{
+            display: flex;
+            align-self: flex-end;
+            justify-self: flex-start;
+            margin-left: auto;
+            transform: translate(-1.2rem, 0.70rem);
+        }
+
+        #button__close{
+            margin: 0.4rem 1rem 0.8rem 0;
+            padding: 0.25rem;
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+        }
+    }
 }

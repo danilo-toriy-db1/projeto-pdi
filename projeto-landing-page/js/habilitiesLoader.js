@@ -30,6 +30,10 @@ export function loadHabilities(){
         div.innerHTML = `
                 <div class="habilidade__content">
                     <h3> ${habilidade.habilidade} </h3>
+                    <button class="button__excludeHability">
+                        <img src="/projeto-landing-page/assets/icons/delete-icon.svg" alt="Ícone de Lixo para
+                        exclusão de Habilidade" id="img__exclusion">
+                    </button>
                 </div>
         `
         habilitiesContainer.appendChild(div);

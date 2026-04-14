@@ -134,6 +134,29 @@
         margin-left: 50%;
     }
 
+    .button__excludeHability{
+        display: none;
+        position: absolute;
+        border: none;
+        background-color: red;
+        border-radius: 0.25rem;
+        cursor: pointer;
+    }
+
+    .hard-skill .button__excludeHability{
+        top: -0.7rem;
+        right: -0.7rem;
+    }
+
+    .soft-skill .button__excludeHability{
+        top: -0.7rem;
+        left: -0.7rem;
+    }
+
+    .modo-exclusao .button__excludeHability{
+        display: flex;
+    }
+
     .button__container{
         display: flex;
         justify-content: space-evenly;
@@ -157,8 +180,5 @@
     #icon__img--remove, #icon__img--add{
         margin-right: 0.5rem;
     }
-
-
-
 
 }

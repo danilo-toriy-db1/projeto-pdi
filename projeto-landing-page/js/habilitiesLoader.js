@@ -1,4 +1,5 @@
 import { getHabilities } from "./habilitiesContainer.js";  
+import { selecionaHabilidadeParaExcluir } from "./habilitiesServices.js";
 
 export function loadHabilities(){
     const habilities = getHabilities();
@@ -36,6 +37,15 @@ export function loadHabilities(){
                     </button>
                 </div>
         `
+
+        const btnLixeira = div.querySelector('.button__excludeHability');
+
+        btnLixeira.addEventListener('click', () => {
+            if(habilitiesContainer.classList.contains('modo-exclusao')){
+                selecionaHabilidadeParaExcluir(div, habilidade.habilidade);
+            }
+        });
+
         habilitiesContainer.appendChild(div);
     });
 }

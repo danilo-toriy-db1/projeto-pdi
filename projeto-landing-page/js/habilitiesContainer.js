@@ -28,3 +28,8 @@ export function addHabilities(novaHabilidade){
     localStorage.setItem('listaHabilidades', JSON.stringify(habilidades));
     loadHabilities();
 }
+
+function removeHabilities(listaExclusao){
+    habilidades = habilidades.filter((habilidade) => !listaExclusao.includes(habilidade.habilidade));
+    localStorage.setItem('listaHabilidades', JSON.stringify(habilidades));
+}

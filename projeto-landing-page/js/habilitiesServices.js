@@ -15,7 +15,7 @@ btnDireito.addEventListener('click', () => {
 });
 
 btnEsquerdo.addEventListener('click', () => {
-    removerHabilidades();
+    ativarModoRemoveHabilidades();
 });
 
 
@@ -90,7 +90,7 @@ function openPopUp(){
 //Função de Remoção de habilidades
 //-------------------------------------------------------------------------------------------------
 
-function removerHabilidades(){
+function ativarModoRemoveHabilidades(){
     const habilitiesContainer = document.getElementById("habilidades__cards--container");
 
     if (habilitiesContainer.classList.contains('modo-exclusao')){
@@ -139,4 +139,21 @@ function alterarBotoesHabilidades(modoAtual){
     imgConfirmaExclusao.src = '/projeto-landing-page/assets/icons/x-delete-icon.svg';
     imgConfirmaExclusao.alt = 'Ícone de confirmação de exclusão';
 
+}
+
+//-------------------------------------------------------------------------------------------------
+//Funções exportadas para o Loader
+//-------------------------------------------------------------------------------------------------
+export let listaExclusao = [];
+
+export function selecionaHabilidadeParaExcluir(divDaArvore, nomeHabilidadeExclusao){
+
+    if (divDaArvore.classList.contains('selecionado-exclusao')){
+        divDaArvore.classList.remove('selecionado-exclusao');
+        listaExclusao = listaExclusao.filter(nomeHabilidade => nomeHabilidade !== nomeHabilidadeExclusao);
+    }else{
+        divDaArvore.classList.add('selecionado-exclusao');
+        listaExclusao.push(nomeHabilidadeExclusao);
+    }
+    
 }

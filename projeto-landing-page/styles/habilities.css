@@ -44,9 +44,8 @@
         content: '';
         position: absolute;
         left: 50%;
-        top: 0.9rem;
-        min-height: 20rem;
-        height: 95%;
+        top: 0.25rem;
+        height: 98%;
         border-right: var(--dashed-line-color) 0.15rem dashed;
         z-index: 1;
     }

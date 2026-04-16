@@ -7,7 +7,7 @@ export function loadHabilities(){
 
     habilitiesContainer.innerHTML = ' ';
 
-    if (habilities.length === 0) {
+    if (!habilities || habilities.length === 0) {
         const div = document.createElement('div');
         div.className = 'vazio'
 
@@ -29,7 +29,7 @@ export function loadHabilities(){
         div.className = `habilidade__type ${tipo}`
         
         div.innerHTML = `
-                <div class="habilidade__content">
+                <div class="habilidade__content" id="${habilidade.id}">
                     <h3> ${habilidade.habilidade} </h3>
                     <button class="button__excludeHability">
                         <img src="/projeto-landing-page/assets/icons/delete-icon.svg" alt="Ícone de Lixo para
@@ -42,7 +42,7 @@ export function loadHabilities(){
 
         btnLixeira.addEventListener('click', () => {
             if(habilitiesContainer.classList.contains('modo-exclusao')){
-                selecionaHabilidadeParaExcluir(div, habilidade.habilidade);
+                selecionaHabilidadeParaExcluir(div);
             }
         });
 

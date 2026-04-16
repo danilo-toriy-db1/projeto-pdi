@@ -1,20 +1,25 @@
 import { loadHabilities } from "./habilitiesLoader.js"
 
 const habilidades = [
-    {"habilidade": "HTML",
+    {"id": "h1",
+     "habilidade": "HTML",
      "tipo": "Hard Skill"   
     },
-    {"habilidade": "CSS",
+    {"id": "h2",
+     "habilidade": "CSS",
      "tipo": "Hard Skill"   
     },
-    {"habilidade": "JavaScript",
+    {"id": "h3",
+     "habilidade": "JavaScript",
      "tipo": "Hard Skill"   
     },
-    {"habilidade": "Comunicação",
+    {"id": "s1",
+     "habilidade": "Comunicação",
      "tipo": "Soft Skill"   
     },
-    {"habilidade": "Trabalho em equipe",
-    "tipo": "Soft Skill"}
+    {"id": "s2",
+     "habilidade": "Trabalho em equipe",
+     "tipo": "Soft Skill"}
 ]
 
 localStorage.setItem('listaHabilidades', JSON.stringify(habilidades));
@@ -29,7 +34,6 @@ export function addHabilities(novaHabilidade){
     loadHabilities();
 }
 
-function removeHabilities(listaExclusao){
-    habilidades = habilidades.filter((habilidade) => !listaExclusao.includes(habilidade.habilidade));
-    localStorage.setItem('listaHabilidades', JSON.stringify(habilidades));
+export function removeHabilities(habilidadesAtualizado){
+    localStorage.setItem('listaHabilidades', JSON.stringify(habilidadesAtualizado));
 }

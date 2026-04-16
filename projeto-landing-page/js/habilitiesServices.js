@@ -1,12 +1,15 @@
-import { addHabilities } from "./habilitiesContainer.js"
+import { addHabilities, getHabilities, removeHabilities } from "./habilitiesContainer.js"
+import { loadHabilities } from "./habilitiesLoader.js"
 
 const modoAtualPagina = document.getElementById("habilidades__cards--container");
 const btnEsquerdo = document.getElementById("button__removeHability");
 const btnDireito = document.getElementById("button__openPopUp");
+let contadorHard = 3;
+let contadorSoft = 2;
 
 btnDireito.addEventListener('click', () => {
     if (modoAtualPagina.classList.contains('modo-exclusao')){
-        console.log("A ser feito. Apenas teste");
+        deletaHabilidades();
         modoAtualPagina.classList.remove('modo-exclusao');
         alterarBotoesHabilidades('exclusao');
     }else{
@@ -73,10 +76,23 @@ function openPopUp(){
                 ? "Soft Skill"
                 : "Hard Skill";
 
-        const novaHabilidade = {
-            "habilidade": habilidade,
-            "tipo": tipo
-        };
+        let novaHabilidade = {};
+
+        if(tipo === "Soft Skill"){
+            novaHabilidade = {
+                "id": `s${contadorHard + 1}`,
+                "habilidade": habilidade,
+                "tipo": tipo
+            };
+            contadorHard++;
+        }else{
+            novaHabilidade = {
+                "id": `s${contadorSoft + 1}`,
+                "habilidade": habilidade,
+                "tipo": tipo
+            };
+            contadorSoft++;
+        }
 
         addHabilities(novaHabilidade);
 
@@ -144,16 +160,30 @@ function alterarBotoesHabilidades(modoAtual){
 //-------------------------------------------------------------------------------------------------
 //Funções exportadas para o Loader
 //-------------------------------------------------------------------------------------------------
-export let listaExclusao = [];
 
-export function selecionaHabilidadeParaExcluir(divDaArvore, nomeHabilidadeExclusao){
+export function selecionaHabilidadeParaExcluir(divDaArvore){
 
     if (divDaArvore.classList.contains('selecionado-exclusao')){
         divDaArvore.classList.remove('selecionado-exclusao');
-        listaExclusao = listaExclusao.filter(nomeHabilidade => nomeHabilidade !== nomeHabilidadeExclusao);
     }else{
         divDaArvore.classList.add('selecionado-exclusao');
-        listaExclusao.push(nomeHabilidadeExclusao);
     }
     
+}
+
+export function deletaHabilidades(){
+    const habilidades = getHabilities();
+    const divHabilidadesParaExcluir = document.querySelectorAll('.selecionado-exclusao');
+
+    divHabilidadesParaExcluir.forEach((habilidade) => {
+        let idCru = (habilidade.querySelector('.habilidade__content')).id;
+        let idReal = habilidades.findIndex((item) => { 
+            return item.id === idCru
+        });
+
+        habilidades.splice(idReal, 1);
+    });
+
+    removeHabilities(habilidades);
+    loadHabilities();
 }

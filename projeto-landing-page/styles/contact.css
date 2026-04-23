@@ -66,7 +66,6 @@
         align-items: center;
 
         a{
-            text-decoration: none;
             color: var(--gray-text);
         }
 
@@ -150,7 +149,84 @@
         align-items: center;
 
         a{
-            text-decoration: none;
+            color: var(--gray-text);
+        }
+
+    }
+}
+
+/*-----------------------Smartphones----------------------------*/
+@media screen and (max-width: 767px){
+    
+    img{
+        height: 2rem;
+        width: 2rem;
+    }
+
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #about, #contact{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+        font-family: var(--text-font-secundary);
+        color: var(--gray-text);
+    }
+
+    .about__container{
+        margin-top: 2rem;
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        hr{
+            margin: 1rem 0 2rem 0;
+            width: 100%;
+        }
+
+
+    }
+
+    .contact__container{
+        margin: 1.5rem 0 2rem 0;
+        width: 80vw;
+
+        hr{
+            margin: 1rem 0 2rem 0;
+            width: 100%;
+        }
+
+        p{
+            justify-self: center;
+            text-align: center;
+        }
+    }
+
+    .tecnologia__item, .gestao__item, .versionamento__item, .contato__item{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+
+        p{
+            width: 100%;
+        }
+    }
+
+    #lista__contato{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        a{
             color: var(--gray-text);
         }
 

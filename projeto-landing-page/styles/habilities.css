@@ -363,3 +363,182 @@
         border: red solid 0.2rem;
     }
 }
+
+/*-----------------------Smartphones----------------------------*/
+@media screen and (max-width: 767px){
+    
+    #habilidades{
+        width: 100vw;
+        min-height: 90vh;
+        background-color: var(--background-main);
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 0 0 0;
+    }
+
+    .habilidades__title{
+        font-family: var(--cursive-font);
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    #habilidades__cards--container{
+        position: relative;
+        width: 90vw;
+        margin: 0 auto;
+        padding: 2.5rem 0;
+        background-color: var(--container-background);
+        border: var(--container-background) 0.1rem solid;
+        border-radius: 1rem;
+    }
+
+    #habilidades__cards--container::after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0.25rem;
+        height: 98%;
+        border-right: var(--dashed-line-color) 0.15rem dashed;
+        z-index: 1;
+    }
+
+    .habilidade__type{
+        position: relative;
+        padding: 0.5rem 1rem;
+        box-sizing: border-box;
+        width: 50%;
+        display: flex;
+    }
+
+    .habilidade__content{
+        position: relative;
+        padding: 0.5rem 0.15rem 0.5rem 0.15rem;
+        min-width: 7.5rem;
+        width: max-content;
+        display: flex;
+        justify-content: center;
+    }
+
+    .habilidade__content h3{
+        width: max-content;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .habilidade__content::after{
+        content: '';
+        position: absolute;
+        width: 0.75rem;
+        height: 0.75rem;
+        top: 50%
+    }
+
+    .habilidade__content::before{
+        content: '';
+        position: absolute;
+        width: 1.8rem;
+        height: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        border-top: var(--dashed-line-color) dashed 0.15rem;
+    }
+
+    .soft-skill .habilidade__content::before{
+        right: -2.2rem;
+    }
+
+    .hard-skill .habilidade__content::before{
+        left: -2rem;
+    }
+
+    .soft-skill .habilidade__content::after{
+        right: -0.5rem;
+        transform: translate(50%, -50%);
+        border-radius: 50%;
+        background-color: var(--dashed-line-color);
+    }
+
+    .hard-skill .habilidade__content::after{
+        left: -0.5rem;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background-color: var(--dashed-line-color);
+    }
+
+    .soft-skill .habilidade__content{
+        background-color: var(--soft-skill-background);
+        border-radius: 0.5rem;
+        border: var(--soft-skill-border) solid 0.2rem;
+    }
+
+    .hard-skill .habilidade__content{
+        background-color: var(--hard-skill-background);
+        border-radius: 0.5rem;
+        border: var(--hard-skill-border) solid 0.2rem;
+    }
+
+    .soft-skill{
+        justify-content: flex-end;
+        padding-right: 2rem;
+    }
+
+    .hard-skill{
+        justify-content: flex-start;
+        padding-left: 2rem;
+        margin-left: 50%;
+    }
+
+    .button__excludeHability{
+        display: none;
+        position: absolute;
+        border: none;
+        background-color: red;
+        border-radius: 0.25rem;
+        cursor: pointer;
+    }
+
+    .hard-skill .button__excludeHability{
+        top: -0.7rem;
+        right: -0.7rem;
+    }
+
+    .soft-skill .button__excludeHability{
+        top: -0.7rem;
+        left: -0.7rem;
+    }
+
+    .modo-exclusao .button__excludeHability{
+        display: flex;
+    }
+
+    .button__container{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2rem 0 0 0;
+    }
+
+    #button__openPopUp, #button__removeHability{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        text-align: center;
+        font-family: var(--text-font-secondary);
+        font-weight: 300;
+        font-size: 1rem;
+    }
+
+    #icon__img--remove, #icon__img--add{
+        margin-right: 0.5rem;
+    }
+
+    .selecionado-exclusao{
+        background-color: rgb(235, 101, 101);
+        border-radius: 0.5rem;
+        border: red solid 0.2rem;
+    }
+}

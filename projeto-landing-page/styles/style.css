@@ -34,7 +34,7 @@
 
 
 /*-----------------------Computadores/notebooks----------------------------*/
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1025px){
 
     * {
         margin: 0;
@@ -144,10 +144,14 @@
 }
 
 /*-----------------------Tablets----------------------------*/
-@media screen and (min-width: 768px) and (max-width: 1023px){
-        * {
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    * {
         margin: 0;
         padding: 0;
+    }
+
+    html{
+        min-height: 100vh;
     }
 
     body{
@@ -155,6 +159,10 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+    }
+
+    footer{
+        margin-top: auto;
     }
 
     #cabecalho{

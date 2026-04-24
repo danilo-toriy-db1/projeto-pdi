@@ -138,6 +138,7 @@
 
     #navbar a:hover{
         color: var(--background-footer);
+        cursor: pointer;
     }
     /*-------------------------------------*/
 

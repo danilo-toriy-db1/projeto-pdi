@@ -49,5 +49,3 @@ export function loadHabilities(){
         habilitiesContainer.appendChild(div);
     });
 }
-
-loadHabilities();

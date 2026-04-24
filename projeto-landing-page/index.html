@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Pessoal</title>
 
-    <link rel="stylesheet" href="./styles/initial-page.css"> 
+    <link id="page__style" rel="stylesheet" href="./styles/initial-page.css"> 
+    <link rel="stylesheet" href="/projeto-landing-page/styles/overlay.css">
     <link rel="icon" type="image/x-icon" href="./assets/img/logo.jpg">
 
     <script src="/projeto-landing-page/js/lookUpTheme.js"></script>
@@ -15,21 +16,21 @@
     <header id="cabecalho">
         <nav id="navbar">
             <a href="#" id="navbar__menu"></a>
-            <a href="/projeto-landing-page/index.html" class="navbar--active">Página Inicial</a>
-            <a href="/projeto-landing-page/pages/about_me.html" class="navbar--desactive">Sobre Mim</a>
-            <a href="/projeto-landing-page/pages/habilities.html" class="navbar--desactive">Habilidades</a>
-            <a href="/projeto-landing-page/pages/contact.html" class="navbar--desactive">Contato e Sobre</a>
+            <a class="navbar--active" id="initial__page">Página Inicial</a>
+            <a class="navbar--desactive" id="about__me">Sobre Mim</a>
+            <a class="navbar--desactive" id="habilities">Habilidades</a>
+            <a class="navbar--desactive" id="contact__page">Contato e Sobre</a>
         </nav>    
 
         <div id="button__container">
-            <button id="themeButton" onclick="changeMode()">
+            <button id="themeButton">
                 <img src="/projeto-landing-page/assets/icons/dark-mode.svg" 
                 alt="Ícone do modo atual da página" id="img-theme">
             </button>
         </div>
     </header>
 
-    <main>
+    <main id="main">
         <section id="apresentacao">
             <div class="apresentacao__container">
                 <div class="apresentacao__img">
@@ -74,7 +75,7 @@
                     </p>
                 </a>
 
-                <a class="card__item" id="card-3" onclick="changeMode()">
+                <a class="card__item" id="card-3">
                     <img src="/projeto-landing-page/assets/icons/change-icon.svg" id="card__item--mode">
                     <p class="card__item--text">
                         O Projeto foi desenvolvido para ser responsivo, ou seja, se adaptando
@@ -96,6 +97,10 @@
 </body>
 
 
-<script src="/projeto-landing-page/js/script.js"></script>
+<script type="module" src="/projeto-landing-page/js/script.js"></script>
+<script type="module" src="/projeto-landing-page/js/router.js"></script>
+<script type="module" src="/projeto-landing-page/js/habilitiesContainer.js"></script>
+<script type="module" src="/projeto-landing-page/js/habilitiesLoader.js"></script>
+<script type="module" src="/projeto-landing-page/js/habilitiesServices.js"></script>
 
 </html>

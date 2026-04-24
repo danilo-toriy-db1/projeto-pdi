@@ -1,3 +1,14 @@
+const themeButton = document.getElementById("themeButton");
+const cardTheme = document.getElementById("card-3");
+
+themeButton.addEventListener('click', () => {
+    changeMode();
+});
+
+cardTheme.addEventListener('click', () => {
+    changeMode();
+});
+
 function changeMode(){
     if(localStorage.getItem("tema") === "light"){
         document.documentElement.classList.add("dark-mode");

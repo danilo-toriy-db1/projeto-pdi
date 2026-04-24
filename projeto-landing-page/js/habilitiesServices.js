@@ -1,26 +1,28 @@
 import { addHabilities, getHabilities, removeHabilities } from "./habilitiesContainer.js"
 import { loadHabilities } from "./habilitiesLoader.js"
 
-const modoAtualPagina = document.getElementById("habilidades__cards--container");
-const btnEsquerdo = document.getElementById("button__removeHability");
-const btnDireito = document.getElementById("button__openPopUp");
 let contadorHard = 3;
 let contadorSoft = 2;
 
-btnDireito.addEventListener('click', () => {
-    if (modoAtualPagina.classList.contains('modo-exclusao')){
-        deletaHabilidades();
-        modoAtualPagina.classList.remove('modo-exclusao');
-        alterarBotoesHabilidades('exclusao');
-    }else{
-        openPopUp();
-    }
-});
+export function inicializarBotoes(){
+    const modoAtualPagina = document.getElementById("habilidades__cards--container");
+    const btnEsquerdo = document.getElementById("button__removeHability");
+    const btnDireito = document.getElementById("button__openPopUp");
 
-btnEsquerdo.addEventListener('click', () => {
-    ativarModoRemoveHabilidades();
-});
+    btnDireito.addEventListener('click', () => {
+        if (modoAtualPagina.classList.contains('modo-exclusao')){
+            deletaHabilidades();
+            modoAtualPagina.classList.remove('modo-exclusao');
+            alterarBotoesHabilidades('exclusao');
+        }else{
+            openPopUp();
+        }
+    });
 
+    btnEsquerdo.addEventListener('click', () => {
+        ativarModoRemoveHabilidades();
+    });
+}
 
 //-------------------------------------------------------------------------------------------------
 //Função de Adição de habilidades - Overlay

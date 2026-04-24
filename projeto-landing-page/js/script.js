@@ -1,5 +1,6 @@
 const themeButton = document.getElementById("themeButton");
 const cardTheme = document.getElementById("card-3");
+const menuIcon = document.getElementById("navbar__menu--collapsed")
 
 themeButton.addEventListener('click', () => {
     changeMode();
@@ -8,6 +9,10 @@ themeButton.addEventListener('click', () => {
 cardTheme.addEventListener('click', () => {
     changeMode();
 });
+
+menuIcon.addEventListener('click', () => {
+    document.body.classList.toggle("expanded");
+})
 
 function changeMode(){
     if(localStorage.getItem("tema") === "light"){

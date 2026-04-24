@@ -70,13 +70,11 @@
     }
 
     #navbar__menu{
-        background-image: url("/projeto-landing-page/assets/icons/menu.svg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
-        margin-left: 0.5rem;
-        width: 2.5rem;
-        height: 2.5rem;
+        display: none;
+    }
+
+    #initial__page{
+        margin-left: 5%;
     }
 
     #button__container{
@@ -187,14 +185,12 @@
         font-size: 1.25rem;
     }
 
+    #initial__page{
+        margin-left: 5%;
+    }
+
     #navbar__menu{
-        background-image: url("/projeto-landing-page/assets/icons/menu.svg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
-        margin-left: 0.75rem;
-        width: 2.25rem;
-        height: 2.25rem;
+        display: none;
     }
 
     #button__container{
@@ -273,67 +269,113 @@
     }
 
     body{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    #cabecalho{
-        width: 100vw;
         display: grid;
-        grid-template-columns: 80% 20%;
-        grid-template-areas: "navbar themeButton";
-        background-color: var(--background-header);
+        grid-template-columns: auto 1fr;
+        grid-template-areas: 
+        "cabecalho main"
+        "cabecalho rodape";
     }
 
-    #navbar{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0.25rem 0 0.25rem 0;
-    }
-
-    #navbar a{
-        font-family: var(--text-font);
-        text-decoration: none;
-        font-size: 0.9rem;
-        text-align: center;
-        margin-left: 0.75rem;
-    }
-
-    #navbar__menu{
+    #navbar__menu--collapsed{
+        grid-area: main;
         background-image: url("/projeto-landing-page/assets/icons/menu.svg");
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;
-        margin: 0 1rem 0 0.75rem;
+        align-self: flex-start;
+        justify-self: flex-start;
+        margin: 0.5rem 0 0 0.75rem;
         width: 1.75rem;
-        height: 1.5rem;
+        height: 1.75rem;
+        z-index: 99;
     }
 
-    #button__container{
-        display: flex;
-        justify-content: right;
-        align-items: center;
+    #cabecalho{
+        display: none;
     }
 
-    #themeButton{
-        width: max-content;
-        height: max-content;
-        padding: 0.25rem;
-        margin: 0 1rem 0 0;
-        border: 0;
-        background-color: transparent;
-        cursor: pointer;
-    }
+    body.expanded{
 
-    #img-theme{
-        width: 1.5rem;
-        height: 1.5rem;
+        #navbar__menu--collapsed{
+            display: none;
+        }
+
+        #cabecalho{
+            grid-area: cabecalho;
+            height: 100%;
+            width: 100%;
+            display: block;
+            position: sticky;
+            background-color: var(--background-header);
+        }
+
+        #navbar{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+        }
+
+        #navbar a{
+            font-family: var(--text-font);
+            text-decoration: none;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .menu__container{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+
+
+            span{
+                display: flex;
+                justify-self: flex-end;
+                align-items: center;
+                font-size: 0.5rem;
+                font-family: var(--text-font-secundary);
+                color: var(--white-text);
+            }
+        }
+
+        #navbar__menu{
+            background-image: url("/projeto-landing-page/assets/icons/menu.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            align-self: self-end;
+            margin: 0;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        #button__container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #themeButton{
+            width: max-content;
+            height: max-content;
+            padding: 0.25rem;
+            margin: 2rem 0 0 0;
+            border: 0;
+            background-color: transparent;
+            cursor: pointer;
+            display: flex;
+            align-self: center;
+        }
+
+        #img-theme{
+            width: 1.5rem;
+            height: 1.5rem;
+        }
     }
 
     #rodape{
+        grid-area: rodape;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -346,7 +388,7 @@
     }
 
     hr{
-        width: 100vw;
+        width: 100%;
         margin: 0.15rem 0.15rem;
         height: 1px;
         border: none;
@@ -354,6 +396,7 @@
     }
 
     main{
+        grid-area: main;
         height: 100%;
         border: none;
         background-color: var(--background-main);

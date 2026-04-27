@@ -25,7 +25,11 @@ navegacao.addEventListener('click', (evento) => {
         case "contact__page":
             loadContactPage();     
             break;
-    
+        
+        case "navbar__menu":
+            document.body.classList.toggle("expanded");
+            break;
+            
         default:
             console.log(`evento não registrado capturado = ${evento}`)
             break;

@@ -294,7 +294,7 @@
 
     #navbar__menu--collapsed{
         grid-area: main;
-        background-image: url("/projeto-landing-page/assets/icons/menu.svg");
+        background-image: url("../assets/icons/menu.svg");
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;
@@ -356,7 +356,7 @@
         }
 
         #navbar__menu{
-            background-image: url("/projeto-landing-page/assets/icons/menu.svg");
+            background-image: url("../assets/icons/menu.svg");
             background-size: cover;
             background-repeat: no-repeat;
             display: flex;

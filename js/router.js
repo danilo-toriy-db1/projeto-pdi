@@ -54,7 +54,7 @@ function loadInitialPage(){
     const estilo = document.getElementById("page__style");
 
     document.title = "Página Inicial";
-    estilo.href = "/projeto-landing-page/styles/initial-page.css"
+    estilo.href = "./styles/initial-page.css"
 
     document.getElementById("main").innerHTML = `
         <section id="apresentacao">
@@ -82,7 +82,7 @@ function loadInitialPage(){
             <div class="cards__container">
                 <a href="https://github.com/danilo-toriy-db1/projeto-pdi/tree/upstream" 
                 class="card__item" id="card-1">
-                    <img src="/projeto-landing-page/assets/icons/github-icon.svg" id="card__item--github">
+                    <img src="./assets/icons/github-icon.svg" id="card__item--github">
                     <p class="card__item--text">
                         Esse projeto foi desenvolvido usando HTML, CSS e JavaScript.
                         Cada Commit e Pull Request foi registrado no Github pessoal
@@ -93,7 +93,7 @@ function loadInitialPage(){
                 </a>
 
                 <a class="card__item" id="card-2">
-                    <img src="/projeto-landing-page/assets/icons/add-icon.svg" id="card__item--add">
+                    <img src="./assets/icons/add-icon.svg" id="card__item--add">
                     <p class="card__item--text">
                         Caso deseje criar uma página de apresentação pessoal, o projeto
                         foi desenvolvido de forma que possa ser replicado via código ou 
@@ -102,7 +102,7 @@ function loadInitialPage(){
                 </a>
 
                 <a class="card__item" id="card-3">
-                    <img src="/projeto-landing-page/assets/icons/change-icon.svg" id="card__item--mode">
+                    <img src="./assets/icons/change-icon.svg" id="card__item--mode">
                     <p class="card__item--text">
                         O Projeto foi desenvolvido para ser responsivo, ou seja, se adaptando
                         a diferentes tipos de telas. Além disso, ela possui troca entre modo
@@ -121,13 +121,13 @@ function loadAboutMePage(){
     const estilo = document.getElementById("page__style");
     document.title = "Sobre Mim";
 
-    estilo.href = "/projeto-landing-page/styles/about_me.css";
+    estilo.href = "./styles/about_me.css";
 
     document.getElementById("main").innerHTML = `
         <section id="about-me">
             <div class="card">
                 <div class="container">
-                    <img src="/projeto-landing-page/assets/img/logo.jpg" alt="Foto de perfil" id="img-profile">
+                    <img src="./assets/img/logo.jpg" alt="Foto de perfil" id="img-profile">
                     <div class="card__infos">
                         <h2 class="card__info--name">Nome: Danilo Riki Toriy</h2>
                         <h2 class="card__info--age">Idade: 19 anos</h2>
@@ -168,7 +168,7 @@ function loadHabilitiesPage(){
     const estilo = document.getElementById("page__style");
     document.title = "Habilidades";
 
-    estilo.href = "/projeto-landing-page/styles/habilities.css";
+    estilo.href = "./styles/habilities.css";
 
     document.getElementById("main").innerHTML = `
         <section id="habilidades">
@@ -180,12 +180,12 @@ function loadHabilitiesPage(){
 
             <div class="button__container">
                 <button type="button" id="button__removeHability">
-                    <img src="/projeto-landing-page/assets/icons/remove-icon.svg" alt="Ícone de Remover Habilidade"
+                    <img src="./assets/icons/remove-icon.svg" alt="Ícone de Remover Habilidade"
                     id="icon__img--remove">    
                     <span id="remove__text">Remover Habilidade</span>
                 </button>
                 <button type="button" id="button__openPopUp">
-                    <img src="/projeto-landing-page/assets/icons/add-icon.svg" alt="Ícone de Adicionar Habilidade" 
+                    <img src="./assets/icons/add-icon.svg" alt="Ícone de Adicionar Habilidade" 
                     id="icon__img--add">
                     <span id="add__text">Adicionar Habilidade</span>
                 </button>
@@ -201,7 +201,7 @@ function loadContactPage(){
     const estilo = document.getElementById("page__style");
     document.title = "Contato e Sobre";
 
-    estilo.href = "/projeto-landing-page/styles/contact.css";
+    estilo.href = "./styles/contact.css";
 
     document.getElementById("main").innerHTML = `
         <section id="about">
@@ -211,19 +211,19 @@ function loadContactPage(){
 
                 <ul id="lista__tecnologias">
                     <li class="tecnologia__item">
-                        <img src="/projeto-landing-page/assets/icons/html-icon.svg" alt="Ícone do HTML"
+                        <img src="./assets/icons/html-icon.svg" alt="Ícone do HTML"
                         id="html-icon">
                         <span id="html">HTML</span> 
                     </li>
                 
                     <li class="tecnologia__item">
-                        <img src="/projeto-landing-page/assets/icons/css-icon.svg" alt="Ícone do CSS"
+                        <img src="./assets/icons/css-icon.svg" alt="Ícone do CSS"
                         id="css-icon">
                         <span id="css">CSS</span> 
                     </li>
                     
                     <li class="tecnologia__item">
-                        <img src="/projeto-landing-page/assets/icons/javascript-icon.svg" alt="Ícone do
+                        <img src="./assets/icons/javascript-icon.svg" alt="Ícone do
                         JavaScript" id="javascript-icon">
                         <span id="js">JavaScript</span> 
                     </li>
@@ -237,14 +237,14 @@ function loadContactPage(){
 
                 <ul id="lista__versionamento">
                     <li class="versionamento__item">
-                        <img src="/projeto-landing-page/assets/icons/git-icon.svg" alt="Ícone do Git"
+                        <img src="./assets/icons/git-icon.svg" alt="Ícone do Git"
                         id="git-icon">
                         <span id="git">Git</span><br>
                         <p>Para versionamento de código </p><br> 
                     </li>
                     
                     <li class="versionamento__item">
-                        <img src="/projeto-landing-page/assets/icons/github-icon.svg" alt="Ícone do Github"
+                        <img src="./assets/icons/github-icon.svg" alt="Ícone do Github"
                         id="github-icon">
                         <span id="github">GitHub</span> <br>
                         <p>Como Repositório do projeto </p><br>
@@ -258,14 +258,14 @@ function loadContactPage(){
 
                 <ul id="lista__gestao">
                     <li class="gestao__item">
-                        <img src="/projeto-landing-page/assets/icons/azure-devops-icon.svg" alt="Ícone do
+                        <img src="./assets/icons/azure-devops-icon.svg" alt="Ícone do
                         Azure DevOps" id="azure-devops-icon">
                         <span id="azure">Azure DevOps</span> <br>
                         <p>Para controle de requisitos com User Stories e apontamento de horas </p><br>
                     </li>
                     
                     <li class="gestao__item">
-                        <img src="/projeto-landing-page/assets/icons/excalidraw-icon.svg" alt="Ícone do 
+                        <img src="./assets/icons/excalidraw-icon.svg" alt="Ícone do 
                         Excalidraw" id="excalidraw-icon">
                         <span id="excalidraw">Excalidraw</span> <br>
                         <p>Para backlog e gestão de sprints de forma visual </p><br>
@@ -285,12 +285,12 @@ function loadContactPage(){
                 <br>
                 <ul id="lista__contato">
                     <li class="contato__item">
-                        <img src="/projeto-landing-page/assets/icons/email-icon.svg" alt="Ícone de Email"
+                        <img src="./assets/icons/email-icon.svg" alt="Ícone de Email"
                         id="contact__email">
                         <a id="email" href="mailto:danilo.toriy@db1.com.br">Email</a>
                     </li>
                     <li class="contato__item">
-                        <img src="/projeto-landing-page/assets/icons/github-icon.svg" alt="Ícone do Github"
+                        <img src="./assets/icons/github-icon.svg" alt="Ícone do Github"
                         id="contact__github">
                         <a id="github__contact" href="https://github.com/danilo-toriy-db1">GitHub</a>
                     </li>

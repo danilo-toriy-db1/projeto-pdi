@@ -18,12 +18,12 @@ function changeMode(){
     if(localStorage.getItem("tema") === "light"){
         document.documentElement.classList.add("dark-mode");
         localStorage.setItem("tema", "dark");
-        document.getElementById("img-theme").src = "/projeto-landing-page/assets/icons/dark-mode.svg";
+        document.getElementById("img-theme").src = "./assets/icons/dark-mode.svg";
         return;
     }
 
     document.documentElement.classList.remove("dark-mode");
     localStorage.setItem("tema", "light");
-    document.getElementById("img-theme").src = "/projeto-landing-page/assets/icons/light-mode.svg";
+    document.getElementById("img-theme").src = "./assets/icons/light-mode.svg";
 }
 

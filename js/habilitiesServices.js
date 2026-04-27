@@ -38,7 +38,7 @@ function openPopUp(){
         <div class="overlay__container">
             <div class="close__container">
                 <button id="button__close">
-                    <img src="/projeto-landing-page/assets/icons/close-icon.svg" alt="Ícone do botão de fechar">
+                    <img src="./assets/icons/close-icon.svg" alt="Ícone do botão de fechar">
                 </button>
             </div> 
             <form id="form__container">
@@ -132,14 +132,14 @@ function alterarBotoesHabilidades(modoAtual){
 
         document.getElementById("remove__text").innerText = 'Remover Habilidade';
 
-        imgRemoverHabilidade.src = '/projeto-landing-page/assets/icons/remove-icon.svg';
+        imgRemoverHabilidade.src = './assets/icons/remove-icon.svg';
         imgRemoverHabilidade.alt = 'Ícone de Remover Habilidade';
 
         const imgAddHabilidade = document.getElementById("icon__img--add");
 
         document.getElementById("add__text").innerText = 'Adicionar Habilidade';
 
-        imgAddHabilidade.src = '/projeto-landing-page/assets/icons/add-icon.svg';
+        imgAddHabilidade.src = './assets/icons/add-icon.svg';
         imgAddHabilidade.alt = 'Ícone de Adicionar Habilidade';
         return;
     }
@@ -147,14 +147,14 @@ function alterarBotoesHabilidades(modoAtual){
 
     document.getElementById("remove__text").innerText = 'Cancelar Remoção';
 
-    imgCancelarExclusao.src = '/projeto-landing-page/assets/icons/black-close-icon.svg';
+    imgCancelarExclusao.src = './assets/icons/black-close-icon.svg';
     imgCancelarExclusao.alt = 'Ícone de cancelar operação';
 
     const imgConfirmaExclusao = document.getElementById("icon__img--add");
 
     document.getElementById("add__text").innerText = 'Confirmar Exclusão';
 
-    imgConfirmaExclusao.src = '/projeto-landing-page/assets/icons/x-delete-icon.svg';
+    imgConfirmaExclusao.src = './assets/icons/x-delete-icon.svg';
     imgConfirmaExclusao.alt = 'Ícone de confirmação de exclusão';
 
 }

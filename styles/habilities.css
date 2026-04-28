@@ -11,6 +11,11 @@
     --dashed-line-color: #ccc; 
 }
 
+@keyframes brilho {
+    0% {transform: translateX(-60%) rotate(45deg);}
+    100% {transform: translateX(60%) rotate(45deg);}
+}
+
 /*-----------------------Computadores/notebooks----------------------------*/
 @media screen and (min-width: 1025px){
 

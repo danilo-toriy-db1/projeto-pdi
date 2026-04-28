@@ -1,5 +1,43 @@
 @import url("./style.css");
 
+:root{
+    --brilho-card: linear-gradient(
+                        45deg,
+                        transparent 35%,
+                        rgb(1, 1, 1, 0.25) 50%,
+                        transparent 70% 
+                    );
+    
+    --linha-card: linear-gradient(
+                        90deg,
+                        transparent,
+                        rgba(1, 1, 1, 0.5),
+                        transparent 
+                    );
+}
+
+.dark-mode{
+    --brilho-card: linear-gradient(
+                        45deg,
+                        transparent 35%,
+                        rgba(255, 255, 255, 0.05) 50%,
+                        transparent 70% 
+                    );
+    
+    --linha-card: linear-gradient(
+                        90deg,
+                        transparent,
+                        rgba(255, 255, 255, 0.4),
+                        transparent 
+                    );
+}
+
+@keyframes brilho {
+    0% {transform: translateX(-60%) rotate(45deg);}
+    100% {transform: translateX(60%) rotate(45deg);}
+}
+
+
 
 /*-----------------------Computadores/notebooks----------------------------*/
 @media screen and (min-width: 1025px){
@@ -65,9 +103,9 @@
     }
 
     .card__item{
+        position: relative;
         padding: 2rem;
         background-color: var(--color-card);
-        border: 0.5rem solid var(--color-card);
         border-radius: 1rem;
         margin: 0 2rem 0 2.5rem;
 
@@ -75,6 +113,29 @@
         color: var(--gray-text);
         font-family: var(--text-font-secundary);
         font-weight: 800;
+
+        overflow: hidden;
+    }
+
+    .card__item::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 200%;
+        height: 200%;
+        background: var(--brilho-card);
+        animation: brilho 3s ease-in-out infinite;
+    }
+
+    .card__item::before{
+        content: '';
+        position: absolute;
+        height: 0.05rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0.5%;
+        background: var(--linha-card);
     }
 
     #card-1, #card-2, #card-3{
@@ -110,8 +171,7 @@
     /* Estilos dinâmicos - hover*/
 
     .card__item:hover{
-        border: 1rem solid var(--color-card);
-        margin: 0 1rem 0 1.5rem;
+        transform: scale(1.1);
         cursor: pointer;
     }
 }
@@ -185,9 +245,9 @@
     }
 
     .card__item{
+        position:relative;
         padding: 1.25rem;
         background-color: var(--color-card);
-        border: 0.5rem solid var(--color-card);
         border-radius: 1rem;
         margin: 0 2rem 1.75rem 2.5rem;
 
@@ -195,6 +255,29 @@
         color: var(--gray-text);
         font-family: var(--text-font-secundary);
         font-weight: 800;
+
+        overflow: hidden;
+    }
+
+        .card__item::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 200%;
+        height: 200%;
+        background: var(--brilho-card);
+        animation: brilho 3s ease-in-out infinite;
+    }
+
+    .card__item::before{
+        content: '';
+        position: absolute;
+        height: 0.05rem;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 2%;
+        background: var(--linha-card);
     }
 
     #card-1, #card-2, #card-3{
@@ -230,8 +313,7 @@
     /* Estilos dinâmicos - hover*/
 
     .card__item:hover{
-        border: 1rem solid var(--color-card);
-        margin: 0 1rem 0 1.5rem;
+        transform: scale(1.1);
         cursor: pointer;
     }
 
@@ -303,9 +385,9 @@
     }
 
     .card__item{
+        position: relative;
         padding: 1.25rem;
         background-color: var(--color-card);
-        border: 0.5rem solid var(--color-card);
         border-radius: 1rem;
         margin: 0 2rem 1.75rem 2.5rem;
 
@@ -313,6 +395,29 @@
         color: var(--gray-text);
         font-family: var(--text-font-secundary);
         font-weight: 800;
+
+        overflow: hidden;
+    }
+
+    .card__item::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 200%;
+        height: 200%;
+        background: var(--brilho-card);
+        animation: brilho 3s ease-in-out infinite;
+    }
+
+    .card__item::before{
+        content: '';
+        position: absolute;
+        height: 0.05rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0.75%;
+        background: var(--linha-card);
     }
 
     #card-1, #card-2, #card-3{
@@ -348,8 +453,7 @@
     /* Estilos dinâmicos - hover*/
 
     .card__item:hover{
-        border: 1rem solid var(--color-card);
-        margin: 0 1rem 0 1.5rem;
+        transform: scale(1.1);
         cursor: pointer;
     }
 }

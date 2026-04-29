@@ -20,7 +20,7 @@
         flex-direction: column;
         width: 40vw;
         height: 40vh;
-        background-color: var(--background-main);
+        background: var(--background-main);
         border: none;
         border-radius: 4rem;
 
@@ -55,12 +55,17 @@
             color: var(--white-text);
         }
 
+        button:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
         #button__reset{
             background-color: #f56056;
         }
 
         #button__submit{
-            background-color: var(--background-header);
+            background-color: #150a30;
         }
 
         label{
@@ -122,7 +127,7 @@
         flex-direction: column;
         width: 70vw;
         height: 30vh;
-        background-color: var(--background-main);
+        background: var(--background-main);
         border: none;
         border-radius: 4rem;
 
@@ -156,13 +161,18 @@
             font-size: 1.2rem;
             color: var(--white-text);
         }
+        
+        button:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
 
         #button__reset{
             background-color: #f56056;
         }
 
         #button__submit{
-            background-color: var(--background-header);
+            background-color: #150a30;
         }
 
         label{
@@ -226,7 +236,7 @@
         justify-content: center;
         width: 70vw;
         height: 40vh;
-        background-color: var(--background-main);
+        background: var(--background-main);
         border: none;
         border-radius: 4rem;
         padding-bottom: 7vh;
@@ -261,12 +271,17 @@
             color: var(--white-text);
         }
 
+        button:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
         #button__reset{
             background-color: #f56056;
         }
 
         #button__submit{
-            background-color: var(--background-header);
+            background-color: #150a30;
         }
 
         label{

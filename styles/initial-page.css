@@ -14,6 +14,8 @@
                         rgba(1, 1, 1, 0.5),
                         transparent 
                     );
+
+    --card-box-shadow: rgba(28, 2, 58, 0.75);
 }
 
 .dark-mode{
@@ -30,6 +32,8 @@
                         rgba(255, 255, 255, 0.4),
                         transparent 
                     );
+    
+    --card-box-shadow: rgba(23, 9, 39, 0.75);
 }
 
 @keyframes brilho {
@@ -47,7 +51,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: row;
-        padding: 1rem;;
+        padding: 1rem;
     }
 
     .apresentacao__text{
@@ -62,7 +66,6 @@
         width: 9rem;
         border-radius: 1rem;
         background-color: var(--color-card);
-        border: var(--color-card) solid 0.25rem;
     }
 
     .apresentacao__title{
@@ -115,6 +118,7 @@
         font-weight: 800;
 
         overflow: hidden;
+        box-shadow: 0.6rem 0.5rem 1rem 0.5rem var(--card-box-shadow);
     }
 
     .card__item::after{
@@ -145,30 +149,26 @@
         flex-direction: column;
 
         text-decoration: none;
+        box-sizing: border-box;
     }
 
     #card__item--github{
         width: 4rem;
         height: 4rem;
         margin: 0 0 1.25rem 0;
-        background-color: white;
     }
 
     #card__item--add{
         width: 4rem;
         height: 4rem;
         margin: 0 0 1.25rem 0;
-        background-color: white;
     }
 
     #card__item--mode{
         width: 4rem;
         height: 4rem;
         margin: 0 0 1.25rem 0;
-        background-color: white;
     }
-
-    /* Estilos dinâmicos - hover*/
 
     .card__item:hover{
         transform: scale(1.1);
@@ -203,7 +203,6 @@
         width: 10rem;
         border-radius: 1rem;
         background-color: var(--color-card);
-        border: var(--color-card) solid 0.25rem;
     }
 
     .apresentacao__title{
@@ -257,9 +256,10 @@
         font-weight: 800;
 
         overflow: hidden;
+        box-shadow: 0.6rem 0.5rem 1rem 0.5rem var(--card-box-shadow);
     }
 
-        .card__item::after{
+    .card__item::after{
         content: '';
         position: absolute;
         top: 0;
@@ -293,24 +293,19 @@
         width: 4rem;
         height: 4rem;
         margin: 0 0 1rem 0;
-        background-color: white;
     }
 
     #card__item--add{
         width: 4rem;
         height: 4rem;
         margin: 0 0 1rem 0;
-        background-color: white;
     }
 
     #card__item--mode{
         width: 4rem;
         height: 4rem;
         margin: 0 0 1rem 0;
-        background-color: white;
     }
-
-    /* Estilos dinâmicos - hover*/
 
     .card__item:hover{
         transform: scale(1.1);
@@ -342,7 +337,6 @@
         width: 9rem;
         border-radius: 1rem;
         background-color: var(--color-card);
-        border: var(--color-card) solid 0.25rem;
     }
 
     .apresentacao__title{
@@ -397,6 +391,7 @@
         font-weight: 800;
 
         overflow: hidden;
+        box-shadow: 0.6rem 0.5rem 1rem 0.5rem var(--card-box-shadow);
     }
 
     .card__item::after{
@@ -433,24 +428,19 @@
         width: 4rem;
         height: 4rem;
         margin: 0 0 1rem 0;
-        background-color: white;
     }
 
     #card__item--add{
         width: 4rem;
         height: 4rem;
         margin: 0 0 1rem 0;
-        background-color: white;
     }
 
     #card__item--mode{
         width: 4rem;
         height: 4rem;
         margin: 0 0 1rem 0;
-        background-color: white;
     }
-
-    /* Estilos dinâmicos - hover*/
 
     .card__item:hover{
         transform: scale(1.1);

@@ -3,9 +3,14 @@
 :root {
     --background-header: #6c558a;
     --backgound-footer: #6c558a;
-    --background-main: #bfa8ed;
+    --background-main: linear-gradient(
+                        50deg,
+                        rgba(190, 173, 204, 1) 0%, 
+                        rgba(147, 103, 171, 1) 27%, 
+                        rgba(148, 93, 212, 1) 55%, 
+                        rgba(227, 176, 255, 1) 94%);
 
-    --color-card: #FFFFFF;
+    --color-card: #e2dedeea;
 
     --text-font: "Lato", Sans-Serif;
     --text-font-secundary: "Comic Neue", Sans-Serif;
@@ -18,9 +23,14 @@
 
 /*If/else para modo escuro*/
 .dark-mode{
-    --background-header: #1d0b35e0;
+    --background-header: rgba(50, 10, 10, 0.2);
     --backgound-footer: #1d0b35e0;
-    --background-main: #6c558a;
+    --background-main: linear-gradient(
+                        50deg, 
+                        rgba(2, 0, 36, 1) 0%, 
+                        rgba(12, 12, 79, 1) 27%, 
+                        rgba(70, 69, 133, 1) 55%, 
+                        rgba(35, 10, 64, 1) 94%);
 
     --color-card: #090816;
 
@@ -47,14 +57,17 @@
         justify-content: center;
         flex-direction: column;
         overflow-x: hidden;
+        background: var(--background-main);
     }
 
     #cabecalho{
+        top: 0;
         width: 100vw;
         display: grid;
         grid-template-columns: 45% 55%;
         grid-template-areas: "navbar themeButton";
         background-color: var(--background-header);
+        backdrop-filter: blur(2px);
     }
 
     #navbar{
@@ -65,7 +78,7 @@
         margin-left: 1.5rem;
     }
 
-        #navbar__menu--collapsed{
+    #navbar__menu--collapsed{
         display: none;
     }
 
@@ -130,7 +143,6 @@
     main{
         height: 100%;
         border: none;
-        background-color: var(--background-main);
     }
 
     .navbar--desactive{
@@ -165,6 +177,7 @@
         justify-content: center;
         flex-direction: column;
         overflow-x: hidden;
+        background: var(--background-main);
     }
 
     footer{
@@ -177,6 +190,7 @@
         grid-template-columns: 70% 30%;
         grid-template-areas: "navbar themeButton";
         background-color: var(--background-header);
+        backdrop-filter: blur(2px);
     }
 
     #navbar__menu--collapsed{
@@ -251,7 +265,6 @@
     main{
         height: 100%;
         border: none;
-        background-color: var(--background-main);
     }
 
     .navbar--desactive{
@@ -287,6 +300,7 @@
         "cabecalho main"
         "cabecalho rodape";
         overflow-x: hidden;
+        background: var(--background-main);
     }
 
     #navbar__menu--collapsed{
@@ -305,6 +319,8 @@
 
     #cabecalho{
         display: none;
+        background-color: var(--background-header);
+        backdrop-filter: blur(2px);
     }
 
     body.expanded{
@@ -320,6 +336,7 @@
             display: block;
             position: sticky;
             background-color: var(--background-header);
+            backdrop-filter: blur(2px);
         }
 
         #navbar{
@@ -412,7 +429,6 @@
         grid-area: main;
         height: 100%;
         border: none;
-        background-color: var(--background-main);
     }
 
     .navbar--desactive{

@@ -185,7 +185,7 @@ function loadHabilitiesPage(){
                     <span id="remove__text">Remover Habilidade</span>
                 </button>
                 <button type="button" id="button__openPopUp">
-                    <img src="./assets/icons/add-icon.svg" alt="Ícone de Adicionar Habilidade" 
+                    <img src="./assets/icons/black-add-icon.svg" alt="Ícone de Adicionar Habilidade" 
                     id="icon__img--add">
                     <span id="add__text">Adicionar Habilidade</span>
                 </button>

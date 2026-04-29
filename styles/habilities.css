@@ -1,22 +1,27 @@
 @import url("./style.css");
 
 :root{
-    --hard-skill-background: #77fc9a;
-    --soft-skill-background: #576ff7;
-    --container-background: #0e051c;
+    --hard-skill-background: whitesmoke;
+    --soft-skill-background: whitesmoke;
+    --container-background: #d2baf8;
 
-    --hard-skill-border: #23b84b;
+    --hard-skill-border: #e73a3a;
     --soft-skill-border: #021373;
 
-    --dashed-line-color: #ccc; 
+    --dashed-line-color: #616161; 
 
-    --duration-animation-linha-principal: 3s;
+    --duration-animation-linha-principal: 2s;
     --duration-animation-linha-galho: 2s;
     --duration-animation-fadeIn: 2s;
     --duration-animation-pintar-card: 2s;
-    --delay-galho-animation: 3s;
-    --delay-fadeIn: 5s;
-    --delay-pintar-card: 5s;
+    --delay-galho-animation: 2s;
+    --delay-fadeIn: 4s;
+    --delay-pintar-card: 4s;
+}
+
+.dark-mode{
+    --container-background: #0e051c;
+    --dashed-line-color: #ccc;
 }
 
 @keyframes linha_principal {
@@ -178,7 +183,7 @@
         border: transparent solid 0.2rem;
 
         animation: pintar_card_hard var(--duration-animation-pintar-card) ease-in-out forwards;
-        animation-delay: 5s;
+        animation-delay: var(--delay-pintar-card);
     }
 
     .soft-skill{
@@ -383,7 +388,7 @@
         border: transparent solid 0.2rem;
 
         animation: pintar_card_hard var(--duration-animation-pintar-card) ease-in-out forwards;
-        animation-delay: 5s;
+        animation-delay: var(--delay-pintar-card);
     }
 
     .soft-skill{
@@ -591,7 +596,7 @@
         border: transparent solid 0.2rem;
 
         animation: pintar_card_hard var(--duration-animation-pintar-card) ease-in-out forwards;
-        animation-delay: 5s;
+        animation-delay: var(--delay-pintar-card);
     }
 
     .soft-skill{

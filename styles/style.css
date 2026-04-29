@@ -46,6 +46,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        overflow-x: hidden;
     }
 
     #cabecalho{
@@ -140,13 +141,10 @@
         color: var(--background-main);
     }
 
-    /* Estilos dinâmicos - hover*/
-
     #navbar a:hover{
         color: var(--background-footer);
         cursor: pointer;
     }
-    /*-------------------------------------*/
 
 }
 
@@ -166,6 +164,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        overflow-x: hidden;
     }
 
     footer{
@@ -263,12 +262,9 @@
         color: var(--background-main);
     }
 
-    /* Estilos dinâmicos - hover*/
-
     #navbar a:hover{
         color: var(--background-footer);
     }
-    /*-------------------------------------*/
     
 }
 
@@ -290,6 +286,7 @@
         grid-template-areas: 
         "cabecalho main"
         "cabecalho rodape";
+        overflow-x: hidden;
     }
 
     #navbar__menu--collapsed{
@@ -426,11 +423,9 @@
         color: var(--background-main);
     }
 
-    /* Estilos dinâmicos - hover*/
 
     #navbar a:hover{
         color: var(--background-footer);
     }
-    /*-------------------------------------*/
 
 }

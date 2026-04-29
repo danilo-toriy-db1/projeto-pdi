@@ -9,11 +9,41 @@
     --soft-skill-border: #021373;
 
     --dashed-line-color: #ccc; 
+
+    --duration-animation-linha-principal: 3s;
+    --duration-animation-linha-galho: 2s;
+    --duration-animation-fadeIn: 2s;
+    --duration-animation-pintar-card: 2s;
+    --delay-galho-animation: 3s;
+    --delay-fadeIn: 5s;
+    --delay-pintar-card: 5s;
 }
 
-@keyframes brilho {
-    0% {transform: translateX(-60%) rotate(45deg);}
-    100% {transform: translateX(60%) rotate(45deg);}
+@keyframes linha_principal {
+    100% { height: 98%; }
+}
+
+@keyframes linha_galho{
+    100% { width: 3.8rem; }
+}
+
+@keyframes linha_galho_mobile{
+    100% { width: 1.8rem; }
+}
+
+@keyframes fadeIn{
+    100% {  visibility: visible;
+            opacity: 1; }
+}
+
+@keyframes pintar_card_soft{
+    100% { background-color: var(--soft-skill-background);
+           border-color: var(--soft-skill-border); }
+}
+
+@keyframes pintar_card_hard{
+    100% { background-color: var(--hard-skill-background);
+           border-color: var(--hard-skill-border); }
 }
 
 /*-----------------------Computadores/notebooks----------------------------*/
@@ -50,9 +80,10 @@
         position: absolute;
         left: 50%;
         top: 0.25rem;
-        height: 98%;
+        height: 0%;
         border-right: var(--dashed-line-color) 0.15rem dashed;
         z-index: 1;
+        animation: linha_principal var(--duration-animation-linha-principal) ease-in-out forwards;
     }
 
     .habilidade__type{
@@ -73,6 +104,11 @@
     .habilidade__content h3{
         width: 100%;
         text-align: center;
+
+        visibility: hidden;
+        opacity: 0;
+        animation: fadeIn var(--duration-animation-fadeIn) ease-in-out forwards;
+        animation-delay: var(--delay-fadeIn);
     }
 
     .habilidade__content::after{
@@ -86,11 +122,13 @@
     .habilidade__content::before{
         content: '';
         position: absolute;
-        width: 3.8rem;
+        width: 0;
         height: 0;
         top: 50%;
         transform: translateY(-50%);
         border-top: var(--dashed-line-color) dashed 0.15rem;
+        animation: linha_galho var(--duration-animation-linha-galho) ease-in-out forwards;
+        animation-delay: var(--delay-galho-animation);
     }
 
     .soft-skill .habilidade__content::before{
@@ -106,6 +144,11 @@
         transform: translate(50%, -50%);
         border-radius: 50%;
         background-color: var(--dashed-line-color);
+
+        visibility: hidden;
+        opacity: 0;
+        animation: fadeIn var(--duration-animation-fadeIn) ease-in-out forwards;
+        animation-delay: var(--delay-fadeIn);
     }
 
     .hard-skill .habilidade__content::after{
@@ -113,18 +156,29 @@
         transform: translate(-50%, -50%);
         border-radius: 50%;
         background-color: var(--dashed-line-color);
+
+        visibility: hidden;
+        opacity: 0;
+        animation: fadeIn var(--duration-animation-fadeIn) ease-in-out forwards;
+        animation-delay: var(--delay-fadeIn);
     }
 
     .soft-skill .habilidade__content{
-        background-color: var(--soft-skill-background);
+        background-color: transparent;
         border-radius: 0.5rem;
-        border: var(--soft-skill-border) solid 0.2rem;
+        border: transparent solid 0.2rem;
+
+        animation: pintar_card_soft var(--duration-animation-pintar-card) ease-in-out forwards;
+        animation-delay: var(--delay-pintar-card);
     }
 
     .hard-skill .habilidade__content{
-        background-color: var(--hard-skill-background);
+        background-color: transparent;
         border-radius: 0.5rem;
-        border: var(--hard-skill-border) solid 0.2rem;
+        border: transparent solid 0.2rem;
+
+        animation: pintar_card_hard var(--duration-animation-pintar-card) ease-in-out forwards;
+        animation-delay: 5s;
     }
 
     .soft-skill{
@@ -189,6 +243,10 @@
         background-color: rgb(235, 101, 101);
         border-radius: 0.5rem;
         border: red solid 0.2rem;
+    }
+
+    #button__removeHability:hover, #button__openPopUp:hover{
+        transform: scale(1.1);
     }
 
 }
@@ -227,9 +285,10 @@
         position: absolute;
         left: 50%;
         top: 0.25rem;
-        height: 98%;
+        height: 0;
         border-right: var(--dashed-line-color) 0.15rem dashed;
         z-index: 1;
+        animation: linha_principal var(--duration-animation-linha-principal) ease-in-out forwards;
     }
 
     .habilidade__type{
@@ -250,6 +309,11 @@
     .habilidade__content h3{
         width: 100%;
         text-align: center;
+
+        visibility: hidden;
+        opacity: 0;
+        animation: fadeIn var(--duration-animation-fadeIn) ease-in-out forwards;
+        animation-delay: var(--delay-fadeIn);
     }
 
     .habilidade__content::after{
@@ -263,11 +327,13 @@
     .habilidade__content::before{
         content: '';
         position: absolute;
-        width: 3.8rem;
+        width: 0;
         height: 0;
         top: 50%;
         transform: translateY(-50%);
         border-top: var(--dashed-line-color) dashed 0.15rem;
+        animation: linha_galho var(--duration-animation-linha-galho) ease-in-out forwards;
+        animation-delay: var(--delay-galho-animation);
     }
 
     .soft-skill .habilidade__content::before{
@@ -283,6 +349,11 @@
         transform: translate(50%, -50%);
         border-radius: 50%;
         background-color: var(--dashed-line-color);
+
+        visibility: hidden;
+        opacity: 0;
+        animation: fadeIn var(--duration-animation-fadeIn) ease-in-out forwards;
+        animation-delay: var(--delay-fadeIn)
     }
 
     .hard-skill .habilidade__content::after{
@@ -290,18 +361,29 @@
         transform: translate(-50%, -50%);
         border-radius: 50%;
         background-color: var(--dashed-line-color);
+
+        visibility: hidden;
+        opacity: 0;
+        animation: fadeIn var(--duration-animation-fadeIn) ease-in-out forwards;
+        animation-delay: var(--delay-fadeIn)
     }
 
     .soft-skill .habilidade__content{
-        background-color: var(--soft-skill-background);
+        background-color: transparent;
         border-radius: 0.5rem;
-        border: var(--soft-skill-border) solid 0.2rem;
+        border: transparent solid 0.2rem;
+
+        animation: pintar_card_soft var(--duration-animation-pintar-card) ease-in-out forwards;
+        animation-delay: var(--delay-pintar-card)
     }
 
     .hard-skill .habilidade__content{
-        background-color: var(--hard-skill-background);
+        background-color: transparent;
         border-radius: 0.5rem;
-        border: var(--hard-skill-border) solid 0.2rem;
+        border: transparent solid 0.2rem;
+
+        animation: pintar_card_hard var(--duration-animation-pintar-card) ease-in-out forwards;
+        animation-delay: 5s;
     }
 
     .soft-skill{
@@ -367,6 +449,11 @@
         border-radius: 0.5rem;
         border: red solid 0.2rem;
     }
+
+    #button__removeHability:hover, #button__openPopUp:hover{
+        transform: scale(1.1);
+    }
+
 }
 
 /*-----------------------Smartphones----------------------------*/
@@ -403,9 +490,10 @@
         position: absolute;
         left: 50%;
         top: 0.25rem;
-        height: 98%;
+        height: 0;
         border-right: var(--dashed-line-color) 0.15rem dashed;
         z-index: 1;
+        animation: linha_principal var(--duration-animation-linha-principal) ease-in-out forwards;
     }
 
     .habilidade__type{
@@ -429,6 +517,11 @@
         width: max-content;
         text-align: center;
         font-size: 1rem;
+
+        visibility: hidden;
+        opacity: 0;
+        animation: fadeIn var(--duration-animation-fadeIn) ease-in-out forwards;
+        animation-delay: var(--delay-fadeIn);
     }
 
     .habilidade__content::after{
@@ -442,11 +535,13 @@
     .habilidade__content::before{
         content: '';
         position: absolute;
-        width: 1.8rem;
+        width: 0;
         height: 0;
         top: 50%;
         transform: translateY(-50%);
         border-top: var(--dashed-line-color) dashed 0.15rem;
+        animation: linha_galho_mobile var(--duration-animation-linha-galho) ease-in-out forwards;
+        animation-delay: var(--delay-galho-animation)
     }
 
     .soft-skill .habilidade__content::before{
@@ -462,6 +557,11 @@
         transform: translate(50%, -50%);
         border-radius: 50%;
         background-color: var(--dashed-line-color);
+
+        visibility: hidden;
+        opacity: 0;
+        animation: fadeIn var(--duration-animation-fadeIn) ease-in-out forwards;
+        animation-delay: var(--delay-fadeIn)
     }
 
     .hard-skill .habilidade__content::after{
@@ -469,18 +569,29 @@
         transform: translate(-50%, -50%);
         border-radius: 50%;
         background-color: var(--dashed-line-color);
+
+        visibility: hidden;
+        opacity: 0;
+        animation: fadeIn var(--duration-animation-fadeIn) ease-in-out forwards;
+        animation-delay: var(--delay-fadeIn)
     }
 
     .soft-skill .habilidade__content{
-        background-color: var(--soft-skill-background);
+        background-color: transparent;
         border-radius: 0.5rem;
-        border: var(--soft-skill-border) solid 0.2rem;
+        border: transparent solid 0.2rem;
+
+        animation: pintar_card_soft var(--duration-animation-pintar-card) ease-in-out forwards;
+        animation-delay: var(--delay-pintar-card)
     }
 
     .hard-skill .habilidade__content{
-        background-color: var(--hard-skill-background);
+        background-color: transparent;
         border-radius: 0.5rem;
-        border: var(--hard-skill-border) solid 0.2rem;
+        border: transparent solid 0.2rem;
+
+        animation: pintar_card_hard var(--duration-animation-pintar-card) ease-in-out forwards;
+        animation-delay: 5s;
     }
 
     .soft-skill{
@@ -546,4 +657,9 @@
         border-radius: 0.5rem;
         border: red solid 0.2rem;
     }
+
+    #button__removeHability:hover, #button__openPopUp:hover{
+        transform: scale(1.1);
+    }
+
 }

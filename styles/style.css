@@ -132,14 +132,6 @@
         width: 100vw;
     }
 
-    hr{
-        width: 100%;
-        margin: 0.15rem 0.15rem;
-        height: 1px;
-        border: none;
-        background-color: var(--gray-text);
-    }
-
     main{
         height: 100%;
         border: none;
@@ -252,14 +244,7 @@
         color: var(--white-text);
         font-family: var(--text-font);
         margin: 0;
-    }
-
-    hr{
         width: 100vw;
-        margin: 0.15rem 0.15rem;
-        height: 1px;
-        border: none;
-        background-color: var(--gray-text);
     }
 
     main{
@@ -415,14 +400,7 @@
         font-family: var(--text-font);
         margin: 0;
         text-align: center;
-    }
-
-    hr{
-        width: 100%;
-        margin: 0.15rem 0.15rem;
-        height: 1px;
-        border: none;
-        background-color: var(--gray-text);
+        width: 100vw;
     }
 
     main{

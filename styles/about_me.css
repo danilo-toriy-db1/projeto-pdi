@@ -29,34 +29,46 @@
         border: solid 0.25rem;
         color: var(--gray-text);
         box-shadow: 0.6rem 0.5rem 1rem 0.5rem var(--card-box-shadow);
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: auto auto;
+        grid-template-areas: "container"
+                             "card__description";
     }
 
     .container{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         margin: 2rem;
         line-height: 2.5rem;    
     }
 
     .card__infos{
-        margin: 1.75rem 0 0 10rem;
+        margin: 0;
+        text-align: center;
+        line-height: 3rem;
+        align-self: center;
     }
 
     .card__biography, .card__hobbies, .card__dislike, .card__goals{
-        margin: 0.75rem 5rem 0.75rem 6rem;   
+        margin: 2rem 5rem 0.75rem 6rem;   
         line-height: 1.5rem;
     }
 
     #img-profile{
-        width: 15rem;
-        height: 13rem;
-        border-radius: 2rem;
-        margin: 1.5rem 1.5rem 1.5rem 4rem;
+        width: 16rem;
+        height: 16rem;
+        border-radius: 15rem;
+        align-self: center;
+        margin: 1rem 0 3rem 1rem;
+
     }
+
 }
 
 /*-----------------------Tablets----------------------------*/
 @media screen and (min-width: 768px) and (max-width: 1024px){
+
     #about-me{
         display: flex;
         justify-content: center;
@@ -80,14 +92,14 @@
 
     .container{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         margin: 0.5rem;
         line-height: 2rem;    
     }
 
     .card__infos{
-        margin: 1.75rem 0 0 2rem;
         line-height: 2rem;
+        text-align: center;
     }
 
     .card__biography, .card__hobbies, .card__dislike, .card__goals{
@@ -97,19 +109,12 @@
         letter-spacing: 0.05rem;
     }
 
-    p~hr{
-        width: 100%;
-        margin: 0.15rem 0.15rem;
-        height: 1px;
-        border: none;
-        background-color: var(--gray-text);
-    }
-
     #img-profile{
         width: 12rem;
         height: 12rem;
-        border-radius: 2rem;
-        margin: 2rem 1rem 1.5rem 2.5rem;
+        border-radius: 10rem;
+        align-self: center;
+        margin: 1.5rem 0 2rem 0;
     }
 }
 
@@ -147,7 +152,7 @@
     .card__infos{
         margin: 1rem 0 0 0;
         font-size: 0.875rem;
-        text-align: left;
+        text-align: center;
     }
 
     .card__biography, .card__hobbies, .card__dislike, .card__goals{
@@ -156,17 +161,10 @@
     }
 
     #img-profile{
-        width: 7rem;
-        height: 7rem;
-        border-radius: 2rem;
-        margin: 1.5rem 1.5rem 1.5rem 5.5rem;
-    }
-
-    p~hr{
-        width: 100%;
-        margin: 0.15rem 0.15rem;
-        height: 1px;
-        border: none;
-        background-color: var(--gray-text);
+        width: 7.5rem;
+        height: 7.5rem;
+        border-radius: 10rem;
+        align-self: center;
+        margin-bottom: 2rem;
     }
 }

@@ -81,7 +81,7 @@ function loadInitialPage(){
         <section id="cards">
             <div class="cards__container">
                 <a href="https://github.com/danilo-toriy-db1/projeto-pdi/tree/upstream" 
-                class="card__item" id="card-1">
+                class="card__item" id="card-1" target="_blank">
                     <img src="./assets/icons/github-icon.svg" id="card__item--github">
                     <p class="card__item--text">
                         Esse projeto foi desenvolvido usando HTML, CSS e JavaScript.
@@ -124,40 +124,40 @@ function loadAboutMePage(){
     estilo.href = "./styles/about_me.css";
 
     document.getElementById("main").innerHTML = `
-        <section id="about-me">
+         <section id="about-me">
             <div class="card">
                 <div class="container">
                     <img src="./assets/img/logo.jpg" alt="Foto de perfil" id="img-profile">
                     <div class="card__infos">
-                        <h2 class="card__info--name">Nome: Danilo Riki Toriy</h2>
-                        <h2 class="card__info--age">Idade: 19 anos</h2>
-                        <h2 class="card__info--carreer">Carreira: Estudante de Engenharia de Software</h2>
-                        <h2 class="card__info--occupation"> Ocupação: Estagiário de Desenvolvimento de Software</h2>
-                        <h2 class="card__info--enterprise"> Empresa: DB1 Global Software</h2>
+                        <h2 class="card__info--name">Danilo Riki Toriy</h2>
+                        <h2 class="card__info--age">19 anos</h2>
+                        <h2 class="card__info--carreer">Estudante de Engenharia de Software</h2>
+                        <h2 class="card__info--occupation">Estagiário de Desenvolvimento de Software</h2>
+                        <h2 class="card__info--enterprise">DB1 Global Software</h2>
                     </div>
                 </div>
-                <p class="card__biography"> <strong>Biografia:</strong> <br>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Deleniti nemo et, placeat vel laboriosam dicta quo eveniet dolore excepturi accusamus 
-                    quisquam, labore deserunt totam. Fugiat nisi impedit debitis ad eligendi.</p>
-                <hr>
-                <p class="card__hobbies"> <strong>Hobbies:</strong> <br>
-                    Meus hobbies incluem Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Nostrum impedit magni maiores hic, dolore sint praesentium aut voluptate totam, 
-                    blanditiis repellat eaque. Deserunt soluta ab ex culpa accusantium repellendus in.
-                </p>
-                <hr>
-                <p class="card__dislike"> <strong>Desgostos:</strong> <br>
-                    Meus desgostos incluem Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Nostrum impedit magni maiores hic, dolore sint praesentium aut voluptate totam, 
-                    blanditiis repellat eaque. Deserunt soluta ab ex culpa accusantium repellendus in.
-                </p>
-                <hr>
-                <p class="card__goals"> <strong>Objetivos de Vida:</strong> <br>
-                    Meus objetivos de vida incluem Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Nostrum impedit magni maiores hic, dolore sint praesentium aut voluptate totam, 
-                    blanditiis repellat eaque. Deserunt soluta ab ex culpa accusantium repellendus in.
-                </p>
+                <div class="card__description">
+                    <p class="card__biography"> <strong>Biografia:</strong> <br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Deleniti nemo et, placeat vel laboriosam dicta quo eveniet dolore excepturi accusamus 
+                        quisquam, labore deserunt totam. Fugiat nisi impedit debitis ad eligendi.
+                    </p>
+                    <p class="card__hobbies"> <strong>Hobbies:</strong> <br>
+                        Meus hobbies incluem Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nostrum impedit magni maiores hic, dolore sint praesentium aut voluptate totam, 
+                        blanditiis repellat eaque. Deserunt soluta ab ex culpa accusantium repellendus in.
+                    </p>
+                    <p class="card__dislike"> <strong>Desgostos:</strong> <br>
+                        Meus desgostos incluem Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nostrum impedit magni maiores hic, dolore sint praesentium aut voluptate totam, 
+                        blanditiis repellat eaque. Deserunt soluta ab ex culpa accusantium repellendus in.
+                    </p>
+                    <p class="card__goals"> <strong>Objetivos de Vida:</strong> <br>
+                        Meus objetivos de vida incluem Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nostrum impedit magni maiores hic, dolore sint praesentium aut voluptate totam, 
+                        blanditiis repellat eaque. Deserunt soluta ab ex culpa accusantium repellendus in.
+                    </p>
+                </div>
             </div>
         </section>
     `
@@ -292,7 +292,7 @@ function loadContactPage(){
                     <li class="contato__item">
                         <img src="./assets/icons/github-icon.svg" alt="Ícone do Github"
                         id="contact__github">
-                        <a id="github__contact" href="https://github.com/danilo-toriy-db1">GitHub</a>
+                        <a id="github__contact" href="https://github.com/danilo-toriy-db1" target="_blank">GitHub</a>
                     </li>
                 </ul>
             </div>

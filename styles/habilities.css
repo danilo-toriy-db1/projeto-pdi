@@ -223,7 +223,7 @@
     .button__container{
         display: flex;
         justify-content: space-evenly;
-        margin: 2rem 0 0 0;
+        margin: 2rem 0 2rem 0;
     }
 
     #button__openPopUp, #button__removeHability{
@@ -428,7 +428,7 @@
     .button__container{
         display: flex;
         justify-content: space-evenly;
-        margin: 2rem 0 0 0;
+        margin: 2rem 0 2rem 0;
     }
 
     #button__openPopUp, #button__removeHability{
@@ -636,7 +636,7 @@
     .button__container{
         display: flex;
         justify-content: space-evenly;
-        margin: 2rem 0 0 0;
+        margin: 2rem 0 2rem 0;
     }
 
     #button__openPopUp, #button__removeHability{

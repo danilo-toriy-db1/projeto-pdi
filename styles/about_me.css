@@ -34,6 +34,7 @@
         grid-template-columns: auto auto;
         grid-template-areas: "container"
                              "card__description";
+        font-family: var(--text-font-secundary);
     }
 
     .container{
@@ -61,7 +62,6 @@
         border-radius: 15rem;
         align-self: center;
         margin: 1rem 0 3rem 1rem;
-
     }
 
 }

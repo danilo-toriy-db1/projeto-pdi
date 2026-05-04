@@ -110,9 +110,16 @@ function openPopUp(){
 
 function ativarModoRemoveHabilidades(){
     const habilitiesContainer = document.getElementById("habilidades__cards--container");
+    const habilitiesList = document.querySelectorAll(".habilidade__type")
 
     if (habilitiesContainer.classList.contains('modo-exclusao')){
         habilitiesContainer.classList.remove('modo-exclusao');
+        habilitiesList.forEach( (habilidade) => {
+            if(habilidade.classList.contains('selecionado-exclusao')){
+                habilidade.classList.remove('selecionado-exclusao');
+            }
+        });
+        
         alterarBotoesHabilidades("exclusao");
         return;
     }
@@ -139,7 +146,7 @@ function alterarBotoesHabilidades(modoAtual){
 
         document.getElementById("add__text").innerText = 'Adicionar Habilidade';
 
-        imgAddHabilidade.src = './assets/icons/add-icon.svg';
+        imgAddHabilidade.src = './assets/icons/black-add-icon.svg';
         imgAddHabilidade.alt = 'Ícone de Adicionar Habilidade';
         return;
     }

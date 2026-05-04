@@ -145,6 +145,30 @@
         color: var(--background-main);
     }
 
+    .tooltip__theme{
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .tooltip__theme--text{
+        position: absolute;
+        visibility: hidden;
+        background-color: var(--color-card);
+        color: var(--gray-text);
+        font-family: var(--text-font-secundary);
+        z-index: 10;
+        top: 90%;
+        left: 66%;
+        border-radius: 1rem;
+        padding: 0.35rem;
+        font-size: 0.85rem;
+    }
+
+    .tooltip__theme:hover .tooltip__theme--text{
+        visibility: visible;
+    }
+
     #navbar a:hover{
         color: var(--background-footer);
         cursor: pointer;
@@ -416,7 +440,6 @@
     .navbar--active{
         color: var(--background-main);
     }
-
 
     #navbar a:hover{
         color: var(--background-footer);

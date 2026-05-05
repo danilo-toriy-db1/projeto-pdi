@@ -276,6 +276,10 @@
         border: none;
     }
 
+    .tooltip__theme--text{
+        display: none;
+    }
+
     .navbar--desactive{
         color: var(--white-text);
     }
@@ -431,6 +435,10 @@
         grid-area: main;
         height: 100%;
         border: none;
+    }
+
+    .tooltip__theme--text{
+        display: none;
     }
 
     .navbar--desactive{

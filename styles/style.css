@@ -331,90 +331,91 @@
     }
 
     #cabecalho{
-        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
         background-color: var(--background-header);
-        backdrop-filter: blur(2px);
+        backdrop-filter: blur(40px);
+        transform: translateX(-100%);
+        transition: transform 0.2s ease-in-out;
+        z-index: 10;
     }
 
     body.expanded{
-
+        
         #navbar__menu--collapsed{
             display: none;
         }
 
         #cabecalho{
-            grid-area: cabecalho;
+            transform: translateX(0);
             height: 100%;
-            width: 100%;
-            display: block;
-            position: sticky;
-            background-color: var(--background-header);
-            backdrop-filter: blur(2px);
         }
+    }
 
-        #navbar{
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    }
+
+    #navbar a{
+        font-family: var(--text-font);
+        text-decoration: none;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .menu__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+
+        span{
             display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-        }
-
-        #navbar a{
-            font-family: var(--text-font);
-            text-decoration: none;
-            font-size: 0.9rem;
-            text-align: center;
-        }
-
-        .menu__container{
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-
-
-            span{
-                display: flex;
-                justify-self: flex-end;
-                align-items: center;
-                font-size: 0.5rem;
-                font-family: var(--text-font-secundary);
-                color: var(--white-text);
-            }
-        }
-
-        #navbar__menu{
-            background-image: url("../assets/icons/menu.svg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            display: flex;
-            align-self: self-end;
-            margin: 0;
-            width: 1.5rem;
-            height: 1.5rem;
-        }
-
-        #button__container{
-            display: flex;
-            justify-content: center;
+            justify-self: flex-end;
             align-items: center;
+            font-size: 0.5rem;
+            font-family: var(--text-font-secundary);
+            color: var(--white-text);
         }
+    }
 
-        #themeButton{
-            width: max-content;
-            height: max-content;
-            padding: 0.25rem;
-            margin: 2rem 0 0 0;
-            border: 0;
-            background-color: transparent;
-            cursor: pointer;
-            display: flex;
-            align-self: center;
-        }
+    #navbar__menu{
+        background-image: url("../assets/icons/menu.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-self: self-end;
+        margin: 0;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
 
-        #img-theme{
-            width: 1.5rem;
-            height: 1.5rem;
-        }
+    #button__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #themeButton{
+        width: max-content;
+        height: max-content;
+        padding: 0.25rem;
+        margin: 2rem 0 0 0;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+        display: flex;
+        align-self: center;
+    }
+
+    #img-theme{
+        width: 1.5rem;
+        height: 1.5rem;
     }
 
     #rodape{

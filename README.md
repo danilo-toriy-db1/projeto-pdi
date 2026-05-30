@@ -1,38 +1,68 @@
-# 🚀 Projetos PDI
+# 🚀 Landing Page Autobiográfica
 
-> **Repositório destinado ao armazenamento dos projetos desenvolvidos no meu Projeto de Desenvolvimento Individual**
-
----
+Este projeto faz parte de um PDI (Plano de Desenvolvimento Individual) focado em consolidar os fundamentos de desenvolvimento web front-end utilizando tecnologias puras.
 
 ## 📌 Índice
-* [Sobre o Projeto](#-sobre-o-projeto)
-* [Objetivo](#-objetivo)
-* [Tecnologias Utilizadas](#-tecnologias-utilizadas)
-* [Envolvidos no PDI](#-envolvidos-no-pdi)
+* [🎯 Objetivo](#-objetivo)
+* [✨ Funcionalidades](#-funcionalidades)
+* [🏗️ Estrutura da Página](#-estrutura-da-página)
+* [📅 Cronograma de Desenvolvimento](#-cronograma-de-desenvolvimento)
+* [📜 Regras do Projeto](#-regras-do-projeto)
+* [👥 Envolvidos no PDI](#-envolvidos-no-pdi)
 
 ---
-
-## 📖 Sobre o Projeto
-Este repositório foi desenvolvido para armazenar todos os projetos desenvolvidos ao decorrer do meu PDI. Ele serve como uma vitrine das minhas competências técnicas, demonstrando organização, lógica e boas práticas de desenvolvimento. Além disso, serve para que sirva de rota de aprendizado, onde posso visualizar, no futuro, meu desempenho e comparar as complexidades dos projetos de acordo com a minha evolução.
 
 ## 🎯 Objetivo
-O principal propósito deste desenvolvimento é o desenvolvimento da minha pessoa como um programador responsável e competente. Ela envolve boas práticas, arquitetura de projetos, organização de código e servem de repositório do meu trabalho de desenvolvimento, podendo ser tanto do Front-end quanto do Back-end, de acordo com a exigência e desafios propostos pelo Padrinho Técnico, Gestor ou até do Tech-Lead.
+Criar uma página pessoal simples e performática, aplicando boas práticas de semântica HTML, estilização moderna com CSS e interatividade real com JavaScript puro, sem auxílio de frameworks.
 
-## 🛠 Tecnologias Utilizadas
-Aqui estão as tecnologias usadas nos projetos:
-
-* ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-* ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-* ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+## ✨ Funcionalidades
+- [ ] **Menu com Navegação Suave:** Scroll fluido ao clicar nos itens do menu.
+- [ ] **Efeito de Digitação:** Animação dinâmica na seção de apresentação.
+- [ ] **Barras de Habilidades:** Animações que disparam quando entram na tela.
+- [ ] **Dark Mode:** Alternância de tema com persistência via `localStorage`.
+- [ ] **Validação de Formulário:** Tratamento de erros e feedback ao usuário.
 
 ---
+
+## 🏗️ Estrutura da Página
+O projeto será dividido em quatro blocos principais para garantir uma navegação fluida:
+
+* **Seção 1: Apresentação** – Cabeçalho com Nome, Título Profissional e o efeito de digitação.
+* **Seção 2: Sobre mim** – Texto descritivo sobre trajetória e objetivos.
+* **Seção 3: Habilidades** – Exibição técnica com as barras de progresso animadas.
+* **Seção 4: Contato** – Formulário validado para envio de mensagens.
+
+## 📅 Cronograma de Desenvolvimento
+
+### 🟢 Semana 1: Estrutura e Estilo
+- [ ] Criar `index.html` com as seções: Apresentação, Sobre, Habilidades e Contato.
+- [ ] Desenvolver o `style.css` com reset e variáveis de cores.
+- [ ] Implementar layout responsivo básico (Mobile First).
+
+### 🟡 Semana 2: Interatividade e Scroll
+- [ ] Implementar o script de **Scroll Suave** para os links internos.
+- [ ] Criar a lógica do **Efeito de Digitação** (Typing Effect) no cabeçalho.
+- [ ] Refinar o design visual (espaçamentos e tipografia).
+
+### 🟠 Semana 3: Experiência do Usuário (UX)
+- [ ] Implementar lógica de **Dark Mode**.
+- [ ] Criar animação das habilidades.
+- [ ] Adicionar estados de *hover* e transições suaves nos botões.
+
+### 🔴 Semana 4: Validação e Finalização
+- [ ] Implementar validação de campos no formulário de contato via JS.
+- [ ] Revisão geral do código (limpeza de comentários e nomes de variáveis).
+- [ ] Publicar o projeto através do **GitHub Pages**.
+
+---
+
+## 📜 Regras do Projeto
+1. **Puro e Simples:** Não utilizar frameworks (React, Angular, Vue, etc.) ou bibliotecas (jQuery, Bootstrap).
+2. **Modularização:** Manter arquivos HTML, CSS e JS estritamente separados.
+3. **Código Limpo:** Nomes de variáveis em inglês ou português, desde que mantenha a consistência.
+4. **Uso do Git:** Realizar commits frequentes descrevendo o que foi implementado.
 
 ## 👥 Envolvidos no PDI
-
-* **Estagiário avaliado:** [Danilo Riki Toriy](https://github.com/danilo-toriy-db1)
-* **Padrinho Técnico:**    [Raphael Galdino Silva Costa](https://github.com/raphaelgadino)
-* **Gestor do PDI:**    Felipe da Silva Costa Sanches
-
-
----
-> Desenvolvido por Danilo Toriy.
+* **Desenvolvedor:** Danilo Toriy
+* **Code Reviewer:** Raphael Galdino
+* **Status do Projeto:** 🏗️ Em desenvolvimento

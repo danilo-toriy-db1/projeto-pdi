@@ -1,0 +1,449 @@
+@import url("./style.css");
+
+:root{
+    --brilho-card: linear-gradient(
+                        45deg,
+                        transparent 35%,
+                        rgb(1, 1, 1, 0.25) 50%,
+                        transparent 70% 
+                    );
+    
+    --linha-card: linear-gradient(
+                        90deg,
+                        transparent,
+                        rgba(1, 1, 1, 0.5),
+                        transparent 
+                    );
+
+    --card-box-shadow: rgba(28, 2, 58, 0.75);
+}
+
+.dark-mode{
+    --brilho-card: linear-gradient(
+                        45deg,
+                        transparent 35%,
+                        rgba(255, 255, 255, 0.05) 50%,
+                        transparent 70% 
+                    );
+    
+    --linha-card: linear-gradient(
+                        90deg,
+                        transparent,
+                        rgba(255, 255, 255, 0.4),
+                        transparent 
+                    );
+    
+    --card-box-shadow: rgba(23, 9, 39, 0.75);
+}
+
+@keyframes brilho {
+    0% {transform: translateX(-60%) rotate(45deg);}
+    100% {transform: translateX(60%) rotate(45deg);}
+}
+
+
+
+/*-----------------------Computadores/notebooks----------------------------*/
+@media screen and (min-width: 1025px){
+
+    .apresentacao__img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        padding: 1rem;
+    }
+
+    .apresentacao__text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #img-logo{
+        margin: 1rem 0 0 0.5rem;
+        width: 9rem;
+        border-radius: 1rem;
+        background-color: var(--color-card);
+    }
+
+    .apresentacao__title{
+        font-family: var(--cursive-font);
+        color: var(--white-text);
+        font-size: 5rem;
+        margin-left: 6rem;
+    }
+
+    .apresentacao__welcome-text{
+        font-family: var(--text-font);
+        color: var(--white-text);
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .apresentacao__initial-text{
+        font-family: var(--text-font-secundary);
+        color: var(--gray-text);
+        font-size: 1.15rem;
+        margin: 1rem 22rem 0.5rem 22rem;
+        text-align: center;
+        line-height: 1.65rem;
+    }
+
+    #cards{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 7rem 10rem 2rem 10rem ;
+    }
+
+    .cards__container{
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-areas: "card-1 card-2 card-3";
+        background-color: var(--background-main);
+    }
+
+    .card__item{
+        position: relative;
+        padding: 2rem;
+        background-color: var(--color-card);
+        border-radius: 1rem;
+        margin: 0 2rem 0 2.5rem;
+
+        text-align: justify;
+        color: var(--gray-text);
+        font-family: var(--text-font-secundary);
+        font-weight: 800;
+
+        overflow: hidden;
+        box-shadow: 0.6rem 0.5rem 1rem 0.5rem var(--card-box-shadow);
+    }
+
+    .card__item::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 200%;
+        height: 200%;
+        background: var(--brilho-card);
+        animation: brilho 3s ease-in-out infinite;
+    }
+
+    .card__item::before{
+        content: '';
+        position: absolute;
+        height: 0.05rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0.5%;
+        background: var(--linha-card);
+    }
+
+    #card-1, #card-2, #card-3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    #card__item--github{
+        width: 4rem;
+        height: 4rem;
+        margin: 0 0 1.25rem 0;
+    }
+
+    #card__item--add{
+        width: 4rem;
+        height: 4rem;
+        margin: 0 0 1.25rem 0;
+    }
+
+    #card__item--mode{
+        width: 4rem;
+        height: 4rem;
+        margin: 0 0 1.25rem 0;
+    }
+
+    .card__item:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+
+/*-----------------------Tablets----------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+    main{
+        min-height: 95vh;
+    }
+
+    .apresentacao__img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        padding: 1rem;;
+    }
+
+    .apresentacao__text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #img-logo{
+        margin: 0.25rem 0 0 0.25rem;
+        width: 10rem;
+        border-radius: 1rem;
+        background-color: var(--color-card);
+    }
+
+    .apresentacao__title{
+        font-family: var(--cursive-font);
+        color: var(--white-text);
+        font-size: 5.25rem;
+        margin-left: 3rem;
+    }
+
+    .apresentacao__welcome-text{
+        font-family: var(--text-font);
+        color: var(--white-text);
+        font-size: 2.25rem;
+        padding: 1.25rem;
+    }
+
+    .apresentacao__initial-text{
+        font-family: var(--text-font-secundary);
+        color: var(--gray-text);
+        font-size: 1.25rem;
+        margin: 1rem 2rem 0.5rem 2rem;
+        text-align: center;
+        line-height: 1.65rem;
+    }
+
+    #cards{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 3rem 1rem 1rem 1rem;
+    }
+
+    .cards__container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--background-main);
+    }
+
+    .card__item{
+        position:relative;
+        padding: 1.25rem;
+        background-color: var(--color-card);
+        border-radius: 1rem;
+        margin: 0 2rem 1.75rem 2.5rem;
+
+        text-align: justify;
+        color: var(--gray-text);
+        font-family: var(--text-font-secundary);
+        font-weight: 800;
+
+        overflow: hidden;
+        box-shadow: 0.6rem 0.5rem 1rem 0.5rem var(--card-box-shadow);
+    }
+
+    .card__item::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 200%;
+        height: 200%;
+        background: var(--brilho-card);
+        animation: brilho 3s ease-in-out infinite;
+    }
+
+    .card__item::before{
+        content: '';
+        position: absolute;
+        height: 0.05rem;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 2%;
+        background: var(--linha-card);
+    }
+
+    #card-1, #card-2, #card-3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        text-decoration: none;
+    }
+
+    #card__item--github{
+        width: 4rem;
+        height: 4rem;
+        margin: 0 0 1rem 0;
+    }
+
+    #card__item--add{
+        width: 4rem;
+        height: 4rem;
+        margin: 0 0 1rem 0;
+    }
+
+    #card__item--mode{
+        width: 4rem;
+        height: 4rem;
+        margin: 0 0 1rem 0;
+    }
+
+    .card__item:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+}
+
+/*-----------------------Smartphones----------------------------*/
+@media screen and (max-width: 767px){
+
+    .apresentacao__img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .apresentacao__text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #img-logo{
+        margin: 0.25rem 0 0 0.25rem;
+        width: 9rem;
+        border-radius: 1rem;
+        background-color: var(--color-card);
+    }
+
+    .apresentacao__title{
+        font-family: var(--cursive-font);
+        color: var(--white-text);
+        font-size: 3.25rem;
+        margin: 2rem 0 0 0;
+    }
+
+    .apresentacao__welcome-text{
+        font-family: var(--text-font);
+        color: var(--white-text);
+        font-size: 1.75rem;
+        padding: 1.25rem;
+        text-align: center;
+    }
+
+    .apresentacao__initial-text{
+        font-family: var(--text-font-secundary);
+        color: var(--gray-text);
+        font-size: 1.1rem;
+        margin: 1rem 2rem 0.5rem 2rem;
+        text-align: center;
+        line-height: 1.65rem;
+    }
+
+    #cards{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 3rem 1rem 1rem 1rem ;
+    }
+
+    .cards__container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--background-main);
+    }
+
+    .card__item{
+        position: relative;
+        padding: 1.25rem;
+        background-color: var(--color-card);
+        border-radius: 1rem;
+        margin: 0 2rem 1.75rem 2.5rem;
+
+        text-align: justify;
+        color: var(--gray-text);
+        font-family: var(--text-font-secundary);
+        font-weight: 800;
+
+        overflow: hidden;
+        box-shadow: 0.6rem 0.5rem 1rem 0.5rem var(--card-box-shadow);
+    }
+
+    .card__item::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 200%;
+        height: 200%;
+        background: var(--brilho-card);
+        animation: brilho 3s ease-in-out infinite;
+    }
+
+    .card__item::before{
+        content: '';
+        position: absolute;
+        height: 0.05rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0.75%;
+        background: var(--linha-card);
+    }
+
+    #card-1, #card-2, #card-3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        text-decoration: none;
+    }
+
+    #card__item--github{
+        width: 4rem;
+        height: 4rem;
+        margin: 0 0 1rem 0;
+    }
+
+    #card__item--add{
+        width: 4rem;
+        height: 4rem;
+        margin: 0 0 1rem 0;
+    }
+
+    #card__item--mode{
+        width: 4rem;
+        height: 4rem;
+        margin: 0 0 1rem 0;
+    }
+
+    .card__item:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}

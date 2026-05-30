@@ -1,0 +1,234 @@
+@import url("./style.css");
+
+/*-----------------------Computadores/notebooks----------------------------*/
+@media screen and (min-width: 1025px){
+
+    img{
+        height: 2rem;
+        width: 2rem;
+    }
+
+    ul{
+        list-style: none;
+    }
+
+    #about, #contact{
+        width: 100vw;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+        font-size: 1.25rem;
+        font-family: var(--text-font-secundary);
+        color: var(--gray-text);
+    }
+
+    .about__container{
+        margin-top: 1.5rem;
+        width: 65vw;
+
+        hr{
+            margin: 1rem 0 2rem 0;
+        }
+
+
+    }
+
+    .contact__container{
+        margin: 1.5rem 0 2rem 0;
+        width: 65vw;
+
+        hr{
+            margin: 1rem 0 2rem 0;
+        }
+
+        p{
+            justify-self: center;
+            text-align: center;
+        }
+    }
+
+    .tecnologia__item, .gestao__item, .versionamento__item, .contato__item{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+
+        p{
+            width: 100%;
+        }
+    }
+
+    #lista__contato{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        a{
+            color: var(--gray-text);
+        }
+
+    }
+
+}
+
+/*-----------------------Tablets----------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+    main{
+        min-height: 100vh;
+    }
+
+    img{
+        height: 2rem;
+        width: 2rem;
+    }
+
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #about, #contact{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-family: var(--text-font-secundary);
+        color: var(--gray-text);
+    }
+
+    .about__container{
+        margin-top: 1.5rem;
+        width: 65vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        hr{
+            margin: 1rem 0 2rem 0;
+            width: 100%;
+        }
+
+
+    }
+
+    .contact__container{
+        margin: 1.5rem 0 2rem 0;
+        width: 65vw;
+
+        hr{
+            margin: 1rem 0 2rem 0;
+            width: 100%;
+        }
+
+        p{
+            justify-self: center;
+            text-align: center;
+        }
+    }
+
+    .tecnologia__item, .gestao__item, .versionamento__item, .contato__item{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+
+        p{
+            width: 100%;
+        }
+    }
+
+    #lista__contato{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        a{
+            color: var(--gray-text);
+        }
+
+    }
+}
+
+/*-----------------------Smartphones----------------------------*/
+@media screen and (max-width: 767px){
+    
+    img{
+        height: 2rem;
+        width: 2rem;
+    }
+
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #about, #contact{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+        font-family: var(--text-font-secundary);
+        color: var(--gray-text);
+    }
+
+    .about__container{
+        margin-top: 2rem;
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        hr{
+            margin: 1rem 0 2rem 0;
+            width: 100%;
+        }
+
+
+    }
+
+    .contact__container{
+        margin: 1.5rem 0 2rem 0;
+        width: 80vw;
+
+        hr{
+            margin: 1rem 0 2rem 0;
+            width: 100%;
+        }
+
+        p{
+            justify-self: center;
+            text-align: center;
+        }
+    }
+
+    .tecnologia__item, .gestao__item, .versionamento__item, .contato__item{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+
+        p{
+            width: 100%;
+        }
+    }
+
+    #lista__contato{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        a{
+            color: var(--gray-text);
+        }
+
+    }
+}
